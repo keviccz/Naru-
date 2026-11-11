@@ -1,0 +1,54 @@
+{
+  "status": "PASS_NUMERICAL_SUPPLEMENTS",
+  "checked_unix": 1794387011.8808095,
+  "raw_csv_rows_checked": 435900,
+  "roots": {
+    "matched_sampling_20261110": {
+      "status": "COMPLETE",
+      "expected_cells": 27,
+      "audited_cells": 27
+    },
+    "gpu_supplement_20261110": {
+      "status": "COMPLETE_BUDGET_SIZE",
+      "expected_cells": 114,
+      "audited_cells": 114
+    },
+    "workload_eval_supplement_v2_20261110": {
+      "status": "COMPLETE",
+      "expected_cells": 81,
+      "audited_cells": 81
+    },
+    "workload_baselines_20261110": {
+      "status": "COMPLETE",
+      "expected_cells": 99,
+      "audited_cells": 99
+    },
+    "stress_v2_baselines_20261110": {
+      "status": "COMPLETE",
+      "expected_cells": 33,
+      "audited_cells": 33
+    },
+    "size_supplement_20261110": {
+      "status": "COMPLETE",
+      "expected_cells": 6,
+      "audited_cells": 6
+    }
+  },
+  "pending": [],
+  "main_sampling_rechecks": 9,
+  "matched_unique_draws": 18,
+  "matched_duplicate_policy": "Equal row budgets and sample seeds reproduce identical samples; reference model labels are not independent samples. Three sample seeds per unique budget.",
+  "zero_reporting": "qerror_* is all-query floor1 diagnostic; qerror_positive_* excludes truth zero; zero estimate counts and distribution are separate. stress is historical v1; stress_v2 canonical.",
+  "latency_correction": "Model timing excludes host numpy mask construction; includes host-mask to GPU conversion/transfer and synchronized inference. Raw older wording includes host masks was ambiguous.",
+  "ranges_policy": "Median and min-max of per-run query quantiles; descriptive grid, not a confidence interval or pooled-query quantile. Training and MC seed counts retained.",
+  "historical_field_correction": "matched raw reference_checkpoint_bytes is parameter budget; corrected analysis reports actual_reference_checkpoint_bytes from training receipt",
+  "scope": "numerical supplementary matrices only; PG and upstream compatibility have separate independent receipts",
+  "derived_table_rows": {
+    "metrics_by_run.csv": 354,
+    "metrics_configuration_ranges.csv": 110,
+    "grouped_metrics.csv": 2517,
+    "size_training_summary.csv": 6,
+    "size_training_curves.csv": 120,
+    "main_sampling_rechecks.csv": 9
+  }
+}

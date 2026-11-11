@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "scale": "full",
+  "scope": "scale_shared",
+  "method": "matched_own_made",
+  "sample_seed": 0,
+  "queries": 1000,
+  "parameter_budget_bytes": 5750408,
+  "sample_rows": 130691,
+  "sample_array_bytes": 5750404,
+  "qerror_median": 1.0171987840143766,
+  "qerror_p95": 2.628831382756589,
+  "qerror_p99": 62.09999999999991,
+  "qerror_max": 368.0,
+  "latency_median_ms": 3.999054431915283,
+  "timing_scope": "CPU estimate only; prebuilt histogram/sample; host mask construction excluded"
+}

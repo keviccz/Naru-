@@ -1,0 +1,67 @@
+{
+  "status": "COMPLETE",
+  "snapshot_id": "snapshot_resume_20261109_172915",
+  "snapshot_rows_updated_at": 1793676989,
+  "source": "https://data.ny.gov/resource/w4pv-hbkt.json",
+  "scale": "1000000",
+  "rows": 1000000,
+  "table_path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/encoded/1000000.npy",
+  "domains_path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/encoded/1000000_domains.json",
+  "columns": [
+    "record_type",
+    "registration_class",
+    "state",
+    "county",
+    "body_type",
+    "fuel_type",
+    "reg_valid_date",
+    "color",
+    "scofflaw_indicator",
+    "suspension_indicator",
+    "revocation_indicator"
+  ],
+  "started_utc": "2026-11-09T13:57:45.719755+00:00",
+  "implemented": [
+    "dev",
+    "main_native"
+  ],
+  "not_implemented": [
+    "scale_shared",
+    "predicate_sweep",
+    "stress"
+  ],
+  "generator": "official-style row anchor; 5-11 columns; domain>=10 permits range; operators stay with sampled columns",
+  "null_semantics": "ordinary comparisons with NULL are false; zero-result queries skipped",
+  "duplicate_policy": "within-split duplicates retained as sampled; cross-split duplicates excluded",
+  "exact_oracle": "full-table exact filter intersection; marginal frequencies only choose evaluation order",
+  "active_workload": "main_native",
+  "progress": {
+    "retained": 2000,
+    "candidates": 2047,
+    "zero_result_skipped": 47,
+    "cross_split_duplicates_skipped": 0
+  },
+  "workloads": {
+    "dev": {
+      "seed": 20261111,
+      "requested": 200,
+      "retained": 200,
+      "candidates": 206,
+      "zero_result_skipped": 6,
+      "cross_split_duplicates_skipped": 0,
+      "within_split_duplicates_retained": 0,
+      "elapsed_seconds": 2.2820291817188263
+    },
+    "main_native": {
+      "seed": 20261110,
+      "requested": 2000,
+      "retained": 2000,
+      "candidates": 2047,
+      "zero_result_skipped": 47,
+      "cross_split_duplicates_skipped": 0,
+      "within_split_duplicates_retained": 1,
+      "elapsed_seconds": 25.29633966833353
+    }
+  },
+  "finished_utc": "2026-11-09T13:58:13.467203+00:00"
+}

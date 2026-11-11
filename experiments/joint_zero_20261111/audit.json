@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "frozen_queries": 600,
+  "pairs": 300,
+  "independent_pg_exact_count_checks": 600,
+  "single_column_pg_histogram_checks": 33,
+  "cpu_cells": 24,
+  "pg_cells": 27,
+  "raw_csv_rows_checked": 10200,
+  "raw_pg_plans_checked": 5400,
+  "paired_estimate_rows": 5100,
+  "workloads_unchanged_during_resume": true,
+  "failed_cpu_attempt_preserved": "failure_cpu_serialization_1",
+  "cpu_resume_only": true,
+  "pg_stopped": true,
+  "limits": [
+    "Targeted stress chosen by truth; no unbiased SQL claim",
+    "Only100 unique pairs per scale",
+    "Matched ResMADE and official ResMADE share identical budget/sample",
+    "Floor1 qerror diagnostic does not measure exact zero recognition; positive miss counts and pair separation retained"
+  ]
+}

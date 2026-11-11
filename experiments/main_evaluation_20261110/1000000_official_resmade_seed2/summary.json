@@ -1,0 +1,34 @@
+{
+  "scope": "main_native; fixed trained checkpoints; shared progressive sampler across model architectures",
+  "queries": 2000,
+  "sampling_budget": 2000,
+  "training_seed": 2,
+  "sampling_seed_policy": "100000+query index; same across models",
+  "runtime_limitation": "official weights use shared unoptimized sampler; not upstream optimized inference performance",
+  "uniform_sample_rows": 10000,
+  "wildcard_skipping": true,
+  "latency_scope": "single query; model includes host masks, transfer, synchronized GPU inference; baseline CPU lookup; all warmed; no PG comparison",
+  "methods": {
+    "exact_marginal_independence": {
+      "qerror_median": 1.2431172268954005,
+      "qerror_p95": 17.0,
+      "qerror_p99": 294.68648300008084,
+      "qerror_max": 9586.0,
+      "latency_median_ms": 0.06951764225959778
+    },
+    "official_resmade": {
+      "qerror_median": 1.0569058773661286,
+      "qerror_p95": 1.4575241324196913,
+      "qerror_p99": 2.066224733270442,
+      "qerror_max": 6.552922430336886,
+      "latency_median_ms": 18.597200512886047
+    },
+    "uniform_sample": {
+      "qerror_median": 1.0628697962433529,
+      "qerror_p95": 28.049999999999955,
+      "qerror_p99": 124.02999999999997,
+      "qerror_max": 392.0,
+      "latency_median_ms": 0.34165382385253906
+    }
+  }
+}

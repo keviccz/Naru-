@@ -1,0 +1,14 @@
+{
+  "status": "FAILED",
+  "queries_completed": 0,
+  "arguments": {
+    "run": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_matrix_20261109/1000000_official_resmade_seed0",
+    "queries": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/workloads/1000000/dev.jsonl",
+    "output": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/official_dev_shared_sampler_20261110",
+    "samples": 2000,
+    "sample_rows": 10000,
+    "scope": "dev"
+  },
+  "gpu_uuid": "GPU-5bba126a-80d2-a7a3-b5df-c3e8b60589d3",
+  "error": "RuntimeError('Sizes of tensors must match except in dimension 1. Expected size 2 but got size 6 for tensor number 1 in the list.')"
+}

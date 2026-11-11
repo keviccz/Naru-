@@ -1,0 +1,10 @@
+scale,scope,queries,unique_semantic_queries,positive_truth_queries,zero_truth_queries,zero_truth_with_empty_predicate_domain,zero_truth_with_nonempty_predicate_domains
+1000000,scale_shared,1000,998,958,42,28,14
+1000000,predicate_sweep,1100,1030,1088,12,12,0
+1000000,stress_v2,300,64,175,125,125,0
+5000000,scale_shared,1000,998,968,32,28,4
+5000000,predicate_sweep,1100,1030,1085,15,15,0
+5000000,stress_v2,300,64,175,125,125,0
+full,scale_shared,1000,998,972,28,28,0
+full,predicate_sweep,1100,1027,1086,14,14,0
+full,stress_v2,300,64,175,125,125,0

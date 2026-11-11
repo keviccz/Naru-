@@ -1,0 +1,69 @@
+{
+  "status": "COMPLETE",
+  "supported_validation_passed": true,
+  "versions": {
+    "torch241": {
+      "supported_conditions": 24,
+      "supported_passed": 24,
+      "synthetic_conditions": 12,
+      "real_conditions": 12,
+      "upstream_native_unsupported_cases": 2,
+      "native_unsupported_case_ids": [
+        "all_wildcards",
+        "one_filter"
+      ],
+      "native_unsupported_excluded_from_pass_count": true,
+      "training_api_smoke_passed": true,
+      "training_api_smoke_steps": 3,
+      "training_api_smoke_losses": [
+        14.64247989654541,
+        14.967042922973633,
+        14.691360473632812
+      ]
+    },
+    "torch113": {
+      "supported_conditions": 24,
+      "supported_passed": 24,
+      "synthetic_conditions": 12,
+      "real_conditions": 12,
+      "upstream_native_unsupported_cases": 2,
+      "native_unsupported_case_ids": [
+        "all_wildcards",
+        "one_filter"
+      ],
+      "native_unsupported_excluded_from_pass_count": true,
+      "training_api_smoke_passed": true,
+      "training_api_smoke_steps": 3,
+      "training_api_smoke_losses": [
+        14.066031455993652,
+        14.887901306152344,
+        14.90781021118164
+      ]
+    }
+  },
+  "deterministic_cross_version": {
+    "logits": {
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "tolerance": 2e-05,
+      "pass": true
+    },
+    "masked_logits": {
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "tolerance": 2e-05,
+      "pass": true
+    },
+    "nll": {
+      "max_abs": 1.9073486328125e-06,
+      "mean_abs": 1.4901161193847656e-07,
+      "tolerance": 2e-05,
+      "pass": true
+    }
+  },
+  "cross_version_mc_conditions": 48,
+  "cross_version_mc_passed": 48,
+  "source": "Unmodified upstream ProgressiveSampling._sample_n; real masks checked against saved allowed_codes; official MADE remote file byte-identical to fixed local vendor",
+  "scope": "CPU correctness and short API compatibility only; no GPU latency claim; no historical full-training reproduction claim",
+  "environment_isolation": "PyTorch1.13.1+cpu in project-private venv_torch113; shared2.4.1+cu121 asserted unchanged in setup113.log"
+}

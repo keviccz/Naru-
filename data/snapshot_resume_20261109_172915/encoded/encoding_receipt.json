@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE",
+  "rows": 12540479,
+  "columns": [
+    "record_type",
+    "registration_class",
+    "state",
+    "county",
+    "body_type",
+    "fuel_type",
+    "reg_valid_date",
+    "color",
+    "scofflaw_indicator",
+    "suspension_indicator",
+    "revocation_indicator"
+  ],
+  "subset_seed": 20261109,
+  "elapsed_seconds": 43.089040994644165,
+  "storage": "int32 NPY; dictionaries JSON",
+  "domain_policy": "per-scale domains; lexical categories, chronological dates; NULL first when present"
+}

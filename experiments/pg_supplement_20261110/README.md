@@ -1,0 +1,25 @@
+# PostgreSQL supplement
+
+This directory contains the isolated PostgreSQL 17.6 experiment and raw outputs. It uses the same frozen DMV snapshot, per-scale dictionaries and 2,000 `main_native` queries as the neural baselines. Each statistics build also evaluates the frozen supplemental `scale_shared` (1,000), `predicate_sweep` (1,100) and `stress_v2` (300) scopes: 4,400 queries per cell, 118,800 total raw plans. `status.json` is authoritative for run completion. Do not interpret an active run or incomplete directory as a result.
+
+The server is built inside the project from the official PostgreSQL archive. The missing Ubuntu build tools are extracted from official Ubuntu packages into `build_tools`, without apt installation or changes to shared Python. The server runs with nonroot UID 763494 (the existing mount-owner UID), with a private project cluster and socket; TCP listening is disabled. The mount root has mode 0700 and that UID has no system passwd entry. A project-local Ubuntu `libnss_wrapper` package maps it to the private name `naru_pg` using project-local passwd/group files. `/etc/passwd`, mount permissions and other system configuration remain unchanged. Build uses four CPUs; ANALYZE/EXPLAIN have parallel execution disabled. No GPU is used.
+
+Configuration is frozen in `fixed_config.json`: targets 100, 1000, and 1000 plus three semantic multi-column statistics objects. The groups describe vehicle identity, geography and legal flags; they are fixed without reading test error. All objects contain `dependencies`, `mcv` and `ndistinct`. The latter supports grouping estimates and must not be credited with WHERE filtering gains. Each tier independently resets per-column targets and extension objects. Three repetitions rebuild statistics with ANALYZE; these are not controlled neural-model seeds.
+
+Supplemental `supplement_correctness.json` records exact PostgreSQL counts for eight fixed stress cases per scale. `null_combo_correctness.json` separately checks all four fuel_type/color 脳 IS NULL/IS NOT NULL combinations, once per scale (12 total), by matching semantic combinations rather than row indices. The original supplemental stress v1 remains preserved in the workload directory; PostgreSQL uses the isolated v2 with all four NULL combinations. Stress cases intentionally repeat single-column conformance patterns; the 300 cases are not 300 independent random samples.
+
+All text columns use COLLATE "C". The date column is DATE after checking that all source timestamps are midnight. SQL literal values come from the original query values, not numeric codes. NULL comparison retains ordinary SQL behavior. COPY uses a distinct sentinel verified absent from non-NULL domains, so empty strings and NULL remain distinct. Empty CSV fields are values because the NULL token is a distinct custom string; whether an empty field is quoted does not alter this policy.
+
+Each scale has an independent `correctness.json`: table row count, exact COUNT checks on eight development queries, per-column NULL counts compared with encoded data, and ordinary NULL comparison checks. Each tier/repetition contains:
+
+- `{scope}_plans.jsonl`: exact SQL and complete raw JSON EXPLAIN; SELECT * with no aggregate, no parallel plan. The root must be the correct relation Seq Scan or an explicitly handled Result.
+- `{scope}_metrics.csv`: query ID, estimate, frozen truth, q-error, server planning time, and client round-trip time. Planning/round-trip measurements are separate and do not execute the query.
+- `analyze.json`: ANALYZE wall time, active configuration, table bytes and per-table catalog row byte accounting.
+- `pg_stats.json`, `pg_stats_ext.json`: actual statistics snapshots after that ANALYZE.
+- `summary.json`: scope-specific descriptive q-error quantiles and mean latency for that repetition; combine repetitions transparently downstream. `q_error` excludes true-zero queries. `q_error_floor1` is separately recorded for all queries, with both estimates and truths clamped to at least one. Exact planner Result zero and ordinary scan clamp-one estimates remain distinct in the raw fields.
+
+Statistics bytes are sums of `pg_column_size` on rows attributed to this table in `pg_statistic` and `pg_statistic_ext_data`. They exclude shared catalog indexes/pages, WAL, executables and heap data. They are logical catalog-row measurements, not exact physical storage allocations. `pg_table_size` is reported separately. Cross-method storage comparisons must retain this boundary.
+
+The local source archive and build-tool packages are reproducibility inputs. Remote build files and the private cluster are not figure inputs. The service is stopped after success or handled failure. Raw failures and repair receipts remain in `evidence/pg_*` and launcher/build logs. Temporary regenerated COPY CSV files are removed after successful import; frozen data and final results are preserved.
+
+Successful results are frozen. The launcher refuses to overwrite a COMPLETE run. Use a separate output root for any new experiment. The post-run launcher guard does not change the experimental computation.

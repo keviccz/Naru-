@@ -1,0 +1,43 @@
+{
+  "seed": 2026111101,
+  "scales": [
+    "1000000",
+    "5000000",
+    "full"
+  ],
+  "pairs_per_scale": 100,
+  "positive_truth_window": [
+    1,
+    10
+  ],
+  "workload": "joint_zero_nearzero",
+  "positive_generation": "Fixed-seed shuffled unique main-native rare positives, then fresh real-row all-column equality anchors pruned in fixed random order while retaining 1..10 truth and at least five predicates; date equality retained for efficient exact counting.",
+  "zero_generation": "Change exactly one original predicate value to another observed non-NULL in-domain value; preserve column/operator/count; all marginal counts strictly positive, conjunction exactly zero.",
+  "query_selection": "Only frozen data/truth, never model estimates or errors. Targeted paired stress, not unbiased SQL sample.",
+  "cpu_methods": "exact marginals; 10000-row sample seed20261109; parameter-matched MADE and ResMADE int32 rows seeds0/1/2; official ResMADE identical budget/sample alias, not extra independent sample",
+  "pg_tiers": {
+    "PG-default": 100,
+    "PG-target1000": 1000,
+    "PG-extstats": 1000
+  },
+  "pg_groups": [
+    [
+      "record_type",
+      "registration_class",
+      "body_type",
+      "fuel_type"
+    ],
+    [
+      "state",
+      "county"
+    ],
+    [
+      "scofflaw_indicator",
+      "suspension_indicator",
+      "revocation_indicator"
+    ]
+  ],
+  "pg_repetitions": 3,
+  "zero_metrics": "raw estimates and >1/>10/>100 row thresholds, plus floor1 qerror diagnostic; ordinary qerror positive truth only",
+  "storage": "FP32 trainable parameter bytes versus int32 rows; common dictionary excluded from both. PG catalog logical row bytes exclude heap/index/page/WAL/executable overhead."
+}

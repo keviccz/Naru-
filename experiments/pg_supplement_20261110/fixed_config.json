@@ -1,0 +1,40 @@
+{
+  "tiers": {
+    "PG-default": 100,
+    "PG-target1000": 1000,
+    "PG-extstats": 1000
+  },
+  "groups": [
+    [
+      "record_type",
+      "registration_class",
+      "body_type",
+      "fuel_type"
+    ],
+    [
+      "state",
+      "county"
+    ],
+    [
+      "scofflaw_indicator",
+      "suspension_indicator",
+      "revocation_indicator"
+    ]
+  ],
+  "group_selection": "Fixed semantic groups from documented column meanings; never selected against main workload. Vehicle identity, geography, legal flags.",
+  "statistics_kinds": [
+    "dependencies",
+    "mcv",
+    "ndistinct"
+  ],
+  "analyze_repetitions": 3,
+  "query_scopes": {
+    "main_native": 2000,
+    "scale_shared": 1000,
+    "predicate_sweep": 1100,
+    "stress_v2": 300
+  },
+  "zero_reporting": "q_error excludes true zero queries; q_error_floor1 is max(max(1,est)/max(1,truth),max(1,truth)/max(1,est)); explicit Result zero and planner row clamp1 retained as raw estimates",
+  "query_semantics": "Ordinary NULL comparison never matches; text COLLATE C; reg_valid_date DATE; main zero results excluded by frozen workload.",
+  "statistics_bytes": "Per-table sum(pg_column_size(pg_statistic row)) and sum(pg_column_size(pg_statistic_ext_data row)) separately. Logical catalog row bytes as returned by server, excludes catalog indexes, shared pages, WAL, executable, heap data. pg_table_size reported separately; not a physical storage attribution."
+}

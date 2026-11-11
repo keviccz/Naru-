@@ -1,0 +1,60 @@
+{
+  "status": "COMPLETE",
+  "source_indexes": [
+    "https://pypi.org/simple",
+    "https://download.pytorch.org/whl/cpu"
+  ],
+  "files": [
+    {
+      "file": "filelock-3.16.1-py3-none-any.whl",
+      "bytes": 16163,
+      "status": "EXISTING_COMPLETE"
+    },
+    {
+      "file": "MarkupSafe-2.1.5-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "bytes": 26106,
+      "status": "EXISTING_COMPLETE"
+    },
+    {
+      "file": "typing_extensions-4.12.2-py3-none-any.whl",
+      "bytes": 37438,
+      "status": "EXISTING_COMPLETE"
+    },
+    {
+      "file": "jinja2-3.1.6-py3-none-any.whl",
+      "bytes": 134899,
+      "status": "EXISTING_COMPLETE"
+    },
+    {
+      "file": "fsspec-2024.9.0-py3-none-any.whl",
+      "bytes": 179253,
+      "status": "EXISTING_COMPLETE"
+    },
+    {
+      "file": "mpmath-1.3.0-py3-none-any.whl",
+      "bytes": 536198,
+      "status": "EXISTING_COMPLETE"
+    },
+    {
+      "file": "networkx-3.1-py3-none-any.whl",
+      "bytes": 2072251,
+      "status": "EXISTING_COMPLETE"
+    },
+    {
+      "file": "sympy-1.13.3-py3-none-any.whl",
+      "bytes": 6189483,
+      "status": "EXISTING_COMPLETE"
+    },
+    {
+      "file": "numpy-1.24.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "bytes": 17316263,
+      "status": "EXISTING_COMPLETE"
+    },
+    {
+      "file": "torch-2.4.1+cpu-cp38-cp38-linux_x86_64.whl",
+      "bytes": 194889522,
+      "status": "UPLOADED"
+    }
+  ],
+  "elapsed_seconds": 158.57800000000134
+}

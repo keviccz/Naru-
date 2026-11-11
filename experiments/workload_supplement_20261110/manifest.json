@@ -1,0 +1,211 @@
+{
+  "status": "COMPLETE",
+  "snapshot": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915",
+  "rowsUpdatedAt": 1793676989,
+  "seeds": {
+    "shared": 20261120,
+    "sweep": 20261121,
+    "stress": 20261122
+  },
+  "counts_per_scale": {
+    "scale_shared": 1000,
+    "predicate_sweep": 1100,
+    "stress": 300
+  },
+  "shared_policy": "1000 fixed raw queries anchored on full table; retained independent of result count; same values/operators/columns in all scales",
+  "sweep_policy": "100 anchored candidates per predicate count 1..11; zero results retained and labeled",
+  "stress_policy": "100 guaranteed zero (NULL ordinary comparisons or absent category), 100 IS NULL/NOT NULL, 100 boundary predicates",
+  "date_semantics": "chronological ISO timestamps; categories lexical; NULL ordinary comparisons false",
+  "main_workload_modified": false,
+  "started_utc": "2026-11-10T14:11:32.090252+00:00",
+  "scales": {
+    "1000000": {
+      "status": "COMPLETE",
+      "rows": 1000000,
+      "domain_sizes": [
+        4,
+        62,
+        62,
+        63,
+        57,
+        9,
+        3489,
+        184,
+        2,
+        2,
+        2
+      ],
+      "workloads": {
+        "scale_shared": {
+          "rows": 1000,
+          "zero_results": 42,
+          "groups": {
+            "all": 1000
+          }
+        },
+        "predicate_sweep": {
+          "rows": 1100,
+          "zero_results": 12,
+          "groups": {
+            "1": 100,
+            "2": 100,
+            "3": 100,
+            "4": 100,
+            "5": 100,
+            "6": 100,
+            "7": 100,
+            "8": 100,
+            "9": 100,
+            "10": 100,
+            "11": 100
+          }
+        },
+        "stress": {
+          "rows": 300,
+          "zero_results": 125,
+          "groups": {
+            "guaranteed_zero": 100,
+            "null_predicate": 100,
+            "boundary": 100
+          }
+        }
+      },
+      "active": "stress",
+      "progress": {
+        "rows": 300,
+        "zero_results": 125,
+        "groups": {
+          "guaranteed_zero": 100,
+          "null_predicate": 100,
+          "boundary": 100
+        }
+      }
+    },
+    "5000000": {
+      "status": "COMPLETE",
+      "rows": 5000000,
+      "domain_sizes": [
+        4,
+        72,
+        73,
+        63,
+        58,
+        9,
+        3829,
+        221,
+        2,
+        2,
+        2
+      ],
+      "workloads": {
+        "scale_shared": {
+          "rows": 1000,
+          "zero_results": 32,
+          "groups": {
+            "all": 1000
+          }
+        },
+        "predicate_sweep": {
+          "rows": 1100,
+          "zero_results": 15,
+          "groups": {
+            "1": 100,
+            "2": 100,
+            "3": 100,
+            "4": 100,
+            "5": 100,
+            "6": 100,
+            "7": 100,
+            "8": 100,
+            "9": 100,
+            "10": 100,
+            "11": 100
+          }
+        },
+        "stress": {
+          "rows": 300,
+          "zero_results": 125,
+          "groups": {
+            "guaranteed_zero": 100,
+            "null_predicate": 100,
+            "boundary": 100
+          }
+        }
+      },
+      "active": "stress",
+      "progress": {
+        "rows": 300,
+        "zero_results": 125,
+        "groups": {
+          "guaranteed_zero": 100,
+          "null_predicate": 100,
+          "boundary": 100
+        }
+      }
+    },
+    "full": {
+      "status": "COMPLETE",
+      "rows": 12540479,
+      "domain_sizes": [
+        4,
+        73,
+        81,
+        63,
+        58,
+        9,
+        3994,
+        226,
+        2,
+        2,
+        2
+      ],
+      "workloads": {
+        "scale_shared": {
+          "rows": 1000,
+          "zero_results": 28,
+          "groups": {
+            "all": 1000
+          }
+        },
+        "predicate_sweep": {
+          "rows": 1100,
+          "zero_results": 14,
+          "groups": {
+            "1": 100,
+            "2": 100,
+            "3": 100,
+            "4": 100,
+            "5": 100,
+            "6": 100,
+            "7": 100,
+            "8": 100,
+            "9": 100,
+            "10": 100,
+            "11": 100
+          }
+        },
+        "stress": {
+          "rows": 300,
+          "zero_results": 125,
+          "groups": {
+            "guaranteed_zero": 100,
+            "null_predicate": 100,
+            "boundary": 100
+          }
+        }
+      },
+      "active": "stress",
+      "progress": {
+        "rows": 300,
+        "zero_results": 125,
+        "groups": {
+          "guaranteed_zero": 100,
+          "null_predicate": 100,
+          "boundary": 100
+        }
+      }
+    }
+  },
+  "elapsed_seconds": 492.6756899356842,
+  "finished_utc": "2026-11-10T14:19:44.766676+00:00"
+}

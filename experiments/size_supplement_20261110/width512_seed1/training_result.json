@@ -1,0 +1,11 @@
+{
+  "final_full_table_nll_nats": 14.04596968214321,
+  "evaluation_seconds": 1.8722960203886032,
+  "training_epochs": 20,
+  "training_steps": 9780,
+  "rows": 1000000,
+  "checkpoint_bytes": 34855251,
+  "peak_gpu_allocated_bytes": 304247296,
+  "peak_gpu_reserved_bytes": 341835776,
+  "process_peak_rss_bytes": 969510912
+}

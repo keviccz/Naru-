@@ -1,0 +1,477 @@
+{
+  "status": "COMPLETE",
+  "passed": true,
+  "deterministic": {
+    "logits": {
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "tolerance": 2e-05,
+      "pass": true
+    },
+    "masked_logits": {
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "tolerance": 2e-05,
+      "pass": true
+    },
+    "nll": {
+      "max_abs": 1.9073486328125e-06,
+      "mean_abs": 1.4901161193847656e-07,
+      "tolerance": 2e-05,
+      "pass": true
+    }
+  },
+  "monte_carlo_comparisons": [
+    {
+      "suite": "synthetic",
+      "query_id": "eq_range",
+      "skip": false,
+      "method": "upstream",
+      "abs_diff": 8.502304553986706e-05,
+      "tolerance": 0.0076251177489757545,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "eq_range",
+      "skip": false,
+      "method": "shared",
+      "abs_diff": 0.0006685942702461256,
+      "tolerance": 0.007643403311667499,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "leading_wildcard",
+      "skip": false,
+      "method": "upstream",
+      "abs_diff": 0.00039284229278563343,
+      "tolerance": 0.021076571345329285,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "leading_wildcard",
+      "skip": false,
+      "method": "shared",
+      "abs_diff": 0.0004795813816599326,
+      "tolerance": 0.021080048399453516,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "middle_wildcard",
+      "skip": false,
+      "method": "upstream",
+      "abs_diff": 0.00011788606643675648,
+      "tolerance": 0.01614046484231949,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "middle_wildcard",
+      "skip": false,
+      "method": "shared",
+      "abs_diff": 0.0008881159359588886,
+      "tolerance": 0.016162872462737142,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "null_comparison",
+      "skip": false,
+      "method": "upstream",
+      "abs_diff": 0.0,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "null_comparison",
+      "skip": false,
+      "method": "shared",
+      "abs_diff": 0.0,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "non_null_range",
+      "skip": false,
+      "method": "upstream",
+      "abs_diff": 0.00026522278785706677,
+      "tolerance": 0.01901570498943329,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "non_null_range",
+      "skip": false,
+      "method": "shared",
+      "abs_diff": 0.0002847690717316942,
+      "tolerance": 0.01901947439473588,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "all_wildcards",
+      "skip": false,
+      "method": "upstream",
+      "abs_diff": 0.0,
+      "tolerance": 0.05,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "all_wildcards",
+      "skip": false,
+      "method": "shared",
+      "abs_diff": 0.0,
+      "tolerance": 0.05,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "one_filter",
+      "skip": false,
+      "method": "upstream",
+      "abs_diff": 0.00031551122665401943,
+      "tolerance": 0.015020530223846435,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "one_filter",
+      "skip": false,
+      "method": "shared",
+      "abs_diff": 0.0009133205865509697,
+      "tolerance": 0.015028308676264715,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "eq_range",
+      "skip": true,
+      "method": "upstream",
+      "abs_diff": 5.8886408805830515e-05,
+      "tolerance": 0.007929981648921966,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "eq_range",
+      "skip": true,
+      "method": "shared",
+      "abs_diff": 0.00044712023518514443,
+      "tolerance": 0.00793831843227963,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "leading_wildcard",
+      "skip": true,
+      "method": "upstream",
+      "abs_diff": 0.0004038989543914684,
+      "tolerance": 0.019751601219177246,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "leading_wildcard",
+      "skip": true,
+      "method": "shared",
+      "abs_diff": 0.0002776557463221585,
+      "tolerance": 0.019745289703423624,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "middle_wildcard",
+      "skip": true,
+      "method": "upstream",
+      "abs_diff": 0.0,
+      "tolerance": 0.01680973410606384,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "middle_wildcard",
+      "skip": true,
+      "method": "shared",
+      "abs_diff": 0.0003036639071069547,
+      "tolerance": 0.01683112907281611,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "null_comparison",
+      "skip": true,
+      "method": "upstream",
+      "abs_diff": 0.0,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "null_comparison",
+      "skip": true,
+      "method": "shared",
+      "abs_diff": 0.0,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "non_null_range",
+      "skip": true,
+      "method": "upstream",
+      "abs_diff": 0.0,
+      "tolerance": 0.019723604023456576,
+      "pass": true
+    },
+    {
+      "suite": "synthetic",
+      "query_id": "non_null_range",
+      "skip": true,
+      "method": "shared",
+      "abs_diff": 0.00018819542601705708,
+      "tolerance": 0.019719754001125696,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00000",
+      "skip": true,
+      "method": "upstream",
+      "abs_diff": 4.2000599205492886e-05,
+      "tolerance": 0.0005363478418439627,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00000",
+      "skip": true,
+      "method": "shared",
+      "abs_diff": 7.117497321540434e-05,
+      "tolerance": 0.0005378065356085093,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00001",
+      "skip": true,
+      "method": "upstream",
+      "abs_diff": 1.0770396329462745e-06,
+      "tolerance": 2.7982224128209055e-05,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00001",
+      "skip": true,
+      "method": "shared",
+      "abs_diff": 2.3095682536222522e-06,
+      "tolerance": 2.8045581558160393e-05,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00002",
+      "skip": true,
+      "method": "upstream",
+      "abs_diff": 5.2992720156907385e-06,
+      "tolerance": 3.971865587071418e-05,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00002",
+      "skip": true,
+      "method": "shared",
+      "abs_diff": 1.2836157736728637e-06,
+      "tolerance": 3.884447015368196e-05,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00003",
+      "skip": true,
+      "method": "upstream",
+      "abs_diff": 5.586436018347753e-05,
+      "tolerance": 0.0006199751407960183,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00003",
+      "skip": true,
+      "method": "shared",
+      "abs_diff": 5.699904887848119e-05,
+      "tolerance": 0.00025325315206876063,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00004",
+      "skip": true,
+      "method": "upstream",
+      "abs_diff": 1.3474933803081166e-05,
+      "tolerance": 0.00036810575984418397,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00004",
+      "skip": true,
+      "method": "shared",
+      "abs_diff": 3.479770257399685e-05,
+      "tolerance": 0.0003699305929239927,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00005",
+      "skip": true,
+      "method": "upstream",
+      "abs_diff": 2.939228434115646e-05,
+      "tolerance": 0.00022517165615186649,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00005",
+      "skip": true,
+      "method": "shared",
+      "abs_diff": 3.4086584781935127e-06,
+      "tolerance": 0.0002386255063557153,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00006",
+      "skip": true,
+      "method": "upstream",
+      "abs_diff": 2.2351741790771484e-05,
+      "tolerance": 0.004530166611075402,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00006",
+      "skip": true,
+      "method": "shared",
+      "abs_diff": 8.8726150875032e-05,
+      "tolerance": 0.004539977444631016,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00007",
+      "skip": true,
+      "method": "upstream",
+      "abs_diff": 2.582642082415988e-08,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00007",
+      "skip": true,
+      "method": "shared",
+      "abs_diff": 4.06655820620283e-09,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00008",
+      "skip": true,
+      "method": "upstream",
+      "abs_diff": 1.1253356933527137e-05,
+      "tolerance": 0.027448176145553588,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00008",
+      "skip": true,
+      "method": "shared",
+      "abs_diff": 1.230393537055008e-07,
+      "tolerance": 0.027447616948047655,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00009",
+      "skip": true,
+      "method": "upstream",
+      "abs_diff": 7.3380768299095844e-06,
+      "tolerance": 0.0008387515693902971,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00009",
+      "skip": true,
+      "method": "shared",
+      "abs_diff": 1.9717526515704992e-05,
+      "tolerance": 0.00083937055654701,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00010",
+      "skip": true,
+      "method": "upstream",
+      "abs_diff": 1.8917489796876907e-10,
+      "tolerance": 5.01731141412165e-06,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00010",
+      "skip": true,
+      "method": "shared",
+      "abs_diff": 1.1077645467323215e-10,
+      "tolerance": 5.0173107218398624e-06,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00011",
+      "skip": true,
+      "method": "upstream",
+      "abs_diff": 2.7667731046676636e-05,
+      "tolerance": 0.0018290939182043075,
+      "pass": true
+    },
+    {
+      "suite": "real_1m",
+      "query_id": "dev_00011",
+      "skip": true,
+      "method": "shared",
+      "abs_diff": 3.042284006369439e-05,
+      "tolerance": 0.0018318893053219654,
+      "pass": true
+    }
+  ],
+  "within_version": {
+    "torch241": {
+      "status": "COMPLETE",
+      "passed": true,
+      "checks": 24,
+      "failed": [],
+      "scope": "independent upstream ProgressiveSampling CPU correctness, not upstream GPU latency, not full historical 1.13 training reproduction",
+      "checkpoint": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_matrix_20261109/1000000_official_resmade_seed0/checkpoint.pt"
+    },
+    "torch113": {
+      "status": "COMPLETE",
+      "passed": true,
+      "checks": 24,
+      "failed": [],
+      "scope": "independent upstream ProgressiveSampling CPU correctness, not upstream GPU latency, not full historical 1.13 training reproduction",
+      "checkpoint": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_matrix_20261109/1000000_official_resmade_seed0/checkpoint.pt"
+    }
+  },
+  "scope": "Same official 1M seed0 checkpoint on CPU in PyTorch2.4.1 and1.13.1, including masked inputs and original upstream inference; no historical full-training equivalence claimed"
+}

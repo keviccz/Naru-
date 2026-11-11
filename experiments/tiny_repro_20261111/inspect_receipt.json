@@ -1,0 +1,15 @@
+{
+  "time": "2026-11-11T10:59:06.766981+00:00",
+  "operation": "Naru_Lab_20261109/scripts/tiny_repro_inspect.py",
+  "kernel_id": "902c2ddb-6d2c-4721-8ca7-d7f26e01349a",
+  "messages": [
+    {
+      "type": "stream",
+      "content": {
+        "name": "stdout",
+        "text": "{\"files\": [{\"path\": \"portable.zip\", \"bytes\": 26000}], \"wheels\": [{\"name\": \"fsspec-2024.9.0-py3-none-any.whl\", \"bytes\": 179253}, {\"name\": \"typing_extensions-4.12.2-py3-none-any.whl\", \"bytes\": 37438}, {\"name\": \"sympy-1.13.3-py3-none-any.whl\", \"bytes\": 6189483}, {\"name\": \"filelock-3.16.1-py3-none-any.whl\", \"bytes\": 16163}, {\"name\": \"mpmath-1.3.0-py3-none-any.whl\", \"bytes\": 536198}, {\"name\": \"networkx-3.1-py3-none-any.whl\", \"bytes\": 2072251}, {\"name\": \"jinja2-3.1.6-py3-none-any.whl\", \"bytes\": 134899}, {\"name\": \"torch-2.4.1+cpu-cp38-cp38-linux_x86_64.whl\", \"bytes\": 146800640}, {\"name\": \"numpy-1.24.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl\", \"bytes\": 17316263}, {\"name\": \"MarkupSafe-2.1.5-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl\", \"bytes\": 26106}]}\nocal/share/jupyter/runtime/kernel-902c2ddb-6d2c-4721-8ca7-d7f26e01349a.json\n2675286 ps -eo pid,args\n\n\n"
+      }
+    }
+  ],
+  "kernel_cleanup_http": 204
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "raw_roundtrip_cells": 110000,
+  "nested_subset_roundtrip_cells": 22000,
+  "formal_snapshot_rows": 12540479,
+  "scope": "raw prefix roundtrip and fixed random subset row mapping; not exhaustive predicate validation"
+}

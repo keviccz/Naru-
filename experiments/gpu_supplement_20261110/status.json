@@ -1,0 +1,715 @@
+{
+  "status": "COMPLETE_BUDGET_SIZE",
+  "runs": [
+    {
+      "name": "size_width128_seed0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/size_width128_seed0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "size_width128_seed1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/size_width128_seed1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "size_width128_seed2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/size_width128_seed2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "size_width512_seed0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/size_width512_seed0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "size_width512_seed1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/size_width512_seed1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "size_width512_seed2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/size_width512_seed2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed0_s100_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed0_s100_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed0_s100_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed0_s100_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed0_s100_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed0_s100_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed0_s500_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed0_s500_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed0_s500_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed0_s500_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed0_s500_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed0_s500_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed0_s2000_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed0_s2000_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed0_s2000_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed0_s2000_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed0_s2000_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed0_s2000_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed0_s8000_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed0_s8000_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed0_s8000_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed0_s8000_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed0_s8000_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed0_s8000_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed1_s100_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed1_s100_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed1_s100_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed1_s100_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed1_s100_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed1_s100_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed1_s500_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed1_s500_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed1_s500_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed1_s500_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed1_s500_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed1_s500_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed1_s2000_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed1_s2000_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed1_s2000_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed1_s2000_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed1_s2000_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed1_s2000_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed1_s8000_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed1_s8000_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed1_s8000_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed1_s8000_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed1_s8000_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed1_s8000_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed2_s100_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed2_s100_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed2_s100_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed2_s100_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed2_s100_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed2_s100_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed2_s500_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed2_s500_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed2_s500_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed2_s500_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed2_s500_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed2_s500_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed2_s2000_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed2_s2000_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed2_s2000_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed2_s2000_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed2_s2000_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed2_s2000_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed2_s8000_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed2_s8000_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed2_s8000_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed2_s8000_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_1000000_seed2_s8000_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed2_s8000_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed0_s100_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed0_s100_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed0_s100_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed0_s100_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed0_s100_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed0_s100_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed0_s500_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed0_s500_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed0_s500_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed0_s500_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed0_s500_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed0_s500_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed0_s2000_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed0_s2000_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed0_s2000_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed0_s2000_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed0_s2000_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed0_s2000_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed0_s8000_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed0_s8000_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed0_s8000_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed0_s8000_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed0_s8000_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed0_s8000_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed1_s100_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed1_s100_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed1_s100_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed1_s100_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed1_s100_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed1_s100_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed1_s500_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed1_s500_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed1_s500_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed1_s500_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed1_s500_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed1_s500_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed1_s2000_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed1_s2000_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed1_s2000_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed1_s2000_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed1_s2000_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed1_s2000_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed1_s8000_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed1_s8000_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed1_s8000_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed1_s8000_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed1_s8000_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed1_s8000_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed2_s100_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed2_s100_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed2_s100_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed2_s100_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed2_s100_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed2_s100_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed2_s500_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed2_s500_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed2_s500_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed2_s500_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed2_s500_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed2_s500_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed2_s2000_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed2_s2000_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed2_s2000_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed2_s2000_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed2_s2000_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed2_s2000_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed2_s8000_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed2_s8000_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed2_s8000_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed2_s8000_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_5000000_seed2_s8000_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed2_s8000_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed0_s100_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed0_s100_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed0_s100_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed0_s100_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed0_s100_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed0_s100_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed0_s500_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed0_s500_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed0_s500_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed0_s500_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed0_s500_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed0_s500_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed0_s2000_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed0_s2000_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed0_s2000_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed0_s2000_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed0_s2000_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed0_s2000_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed0_s8000_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed0_s8000_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed0_s8000_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed0_s8000_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed0_s8000_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed0_s8000_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed1_s100_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed1_s100_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed1_s100_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed1_s100_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed1_s100_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed1_s100_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed1_s500_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed1_s500_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed1_s500_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed1_s500_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed1_s500_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed1_s500_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed1_s2000_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed1_s2000_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed1_s2000_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed1_s2000_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed1_s2000_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed1_s2000_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed1_s8000_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed1_s8000_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed1_s8000_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed1_s8000_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed1_s8000_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed1_s8000_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed2_s100_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed2_s100_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed2_s100_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed2_s100_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed2_s100_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed2_s100_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed2_s500_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed2_s500_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed2_s500_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed2_s500_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed2_s500_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed2_s500_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed2_s2000_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed2_s2000_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed2_s2000_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed2_s2000_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed2_s2000_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed2_s2000_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed2_s8000_mc0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed2_s8000_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed2_s8000_mc1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed2_s8000_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "budget_full_seed2_s8000_mc2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed2_s8000_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    }
+  ],
+  "budget_grid": {
+    "scales": [
+      "1000000",
+      "5000000",
+      "full"
+    ],
+    "training_seeds": [
+      0,
+      1,
+      2
+    ],
+    "mc_seeds": [
+      0,
+      1,
+      2
+    ],
+    "samples": [
+      100,
+      500,
+      2000,
+      8000
+    ],
+    "model": "own_resmade"
+  },
+  "gpu_check": "GPU-5bba126a-80d2-a7a3-b5df-c3e8b60589d3, 4, 0",
+  "active": "budget_full_seed2_s8000_mc2"
+}

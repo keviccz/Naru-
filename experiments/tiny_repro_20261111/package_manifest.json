@@ -1,0 +1,20 @@
+{
+  "files": [
+    "README.md",
+    "requirements-cpu.txt",
+    "run_cpu.sh",
+    "run_tiny.py",
+    "SOURCE.json",
+    "data\\tiny.csv",
+    "package_source\\src\\baselines.py",
+    "package_source\\src\\models.py",
+    "package_source\\vendor\\naru\\LICENSE",
+    "package_source\\vendor\\naru\\made.py"
+  ],
+  "bytes": 26000,
+  "sources": [
+    "https://pypi.org/simple",
+    "https://download.pytorch.org/whl/cpu"
+  ],
+  "dependency_lock": "repro/requirements-cpu.txt"
+}

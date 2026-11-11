@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETE",
+  "queries_completed": 2000,
+  "arguments": {
+    "run": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_matrix_20261109/1000000_own_resmade_seed2",
+    "queries": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/workloads/1000000/main_native.jsonl",
+    "output": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_1000000_seed2_s8000_mc1",
+    "samples": 8000,
+    "sample_rows": 10000,
+    "scope": "main_native",
+    "mc_seed": 1,
+    "skip_baselines": true
+  },
+  "gpu_uuid": "GPU-5bba126a-80d2-a7a3-b5df-c3e8b60589d3"
+}

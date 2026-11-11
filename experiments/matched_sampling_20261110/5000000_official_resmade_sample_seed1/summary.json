@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "queries": 2000,
+  "scale": "5000000",
+  "reference_model": "official_resmade",
+  "sample_seed": 1,
+  "parameter_budget_bytes": 7590328,
+  "sample_rows": 172507,
+  "sample_array_bytes": 7590308,
+  "reference_checkpoint_bytes": 7590328,
+  "shared_dictionary_policy": "excluded both sides",
+  "qerror_median": 1.0145419447358837,
+  "qerror_p95": 2.458016405951434,
+  "qerror_p99": 23.019999999999982,
+  "qerror_max": 74.0,
+  "latency_median_ms": 5.313389003276825
+}

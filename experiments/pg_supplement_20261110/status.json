@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETE",
+  "started": 1794321030.020495,
+  "version": "17.6",
+  "scope": "stress_v2",
+  "phase": "done",
+  "scale": "full",
+  "tier": "PG-extstats",
+  "repetition": 3,
+  "ended": 1794321259.7532964
+}

@@ -1,0 +1,31 @@
+{
+  "scope": "development queries only; not final benchmark",
+  "queries": 200,
+  "sampling_budget": 2000,
+  "uniform_sample_rows": 10000,
+  "wildcard_skipping": true,
+  "latency_scope": "single query; model includes host masks, transfer, synchronized GPU inference; baseline CPU lookup; all warmed; no PG comparison",
+  "methods": {
+    "exact_marginal_independence": {
+      "qerror_median": 1.2399453881051419,
+      "qerror_p95": 20.712309957265422,
+      "qerror_p99": 399.063937734505,
+      "qerror_max": 3030.0,
+      "latency_median_ms": 0.07048994302749634
+    },
+    "own_resmade": {
+      "qerror_median": 1.0606437034948821,
+      "qerror_p95": 1.477276843636346,
+      "qerror_p99": 1.7021382365632298,
+      "qerror_max": 2.3626851758923073,
+      "latency_median_ms": 17.985470592975616
+    },
+    "uniform_sample": {
+      "qerror_median": 1.0937225230770617,
+      "qerror_p95": 29.049999999999983,
+      "qerror_p99": 68.0,
+      "qerror_max": 101.0,
+      "latency_median_ms": 0.3511980175971985
+    }
+  }
+}

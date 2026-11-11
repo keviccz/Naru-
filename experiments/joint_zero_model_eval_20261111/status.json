@@ -1,0 +1,842 @@
+{
+  "status": "COMPLETE",
+  "runs": [
+    {
+      "name": "1000000_own_resmade_seed0_mc0",
+      "scale": "1000000",
+      "model": "own_resmade",
+      "training_seed": 0,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_own_resmade_seed0_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_own_resmade_seed0_mc1",
+      "scale": "1000000",
+      "model": "own_resmade",
+      "training_seed": 0,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_own_resmade_seed0_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_own_resmade_seed0_mc2",
+      "scale": "1000000",
+      "model": "own_resmade",
+      "training_seed": 0,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_own_resmade_seed0_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_own_made_seed0_mc0",
+      "scale": "1000000",
+      "model": "own_made",
+      "training_seed": 0,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_own_made_seed0_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_own_made_seed0_mc1",
+      "scale": "1000000",
+      "model": "own_made",
+      "training_seed": 0,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_own_made_seed0_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_own_made_seed0_mc2",
+      "scale": "1000000",
+      "model": "own_made",
+      "training_seed": 0,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_own_made_seed0_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_official_resmade_seed0_mc0",
+      "scale": "1000000",
+      "model": "official_resmade",
+      "training_seed": 0,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_official_resmade_seed0_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_official_resmade_seed0_mc1",
+      "scale": "1000000",
+      "model": "official_resmade",
+      "training_seed": 0,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_official_resmade_seed0_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_official_resmade_seed0_mc2",
+      "scale": "1000000",
+      "model": "official_resmade",
+      "training_seed": 0,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_official_resmade_seed0_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_own_resmade_seed1_mc0",
+      "scale": "1000000",
+      "model": "own_resmade",
+      "training_seed": 1,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_own_resmade_seed1_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_own_resmade_seed1_mc1",
+      "scale": "1000000",
+      "model": "own_resmade",
+      "training_seed": 1,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_own_resmade_seed1_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_own_resmade_seed1_mc2",
+      "scale": "1000000",
+      "model": "own_resmade",
+      "training_seed": 1,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_own_resmade_seed1_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_own_made_seed1_mc0",
+      "scale": "1000000",
+      "model": "own_made",
+      "training_seed": 1,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_own_made_seed1_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_own_made_seed1_mc1",
+      "scale": "1000000",
+      "model": "own_made",
+      "training_seed": 1,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_own_made_seed1_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_own_made_seed1_mc2",
+      "scale": "1000000",
+      "model": "own_made",
+      "training_seed": 1,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_own_made_seed1_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_official_resmade_seed1_mc0",
+      "scale": "1000000",
+      "model": "official_resmade",
+      "training_seed": 1,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_official_resmade_seed1_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_official_resmade_seed1_mc1",
+      "scale": "1000000",
+      "model": "official_resmade",
+      "training_seed": 1,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_official_resmade_seed1_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_official_resmade_seed1_mc2",
+      "scale": "1000000",
+      "model": "official_resmade",
+      "training_seed": 1,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_official_resmade_seed1_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_own_resmade_seed2_mc0",
+      "scale": "1000000",
+      "model": "own_resmade",
+      "training_seed": 2,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_own_resmade_seed2_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_own_resmade_seed2_mc1",
+      "scale": "1000000",
+      "model": "own_resmade",
+      "training_seed": 2,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_own_resmade_seed2_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_own_resmade_seed2_mc2",
+      "scale": "1000000",
+      "model": "own_resmade",
+      "training_seed": 2,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_own_resmade_seed2_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_own_made_seed2_mc0",
+      "scale": "1000000",
+      "model": "own_made",
+      "training_seed": 2,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_own_made_seed2_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_own_made_seed2_mc1",
+      "scale": "1000000",
+      "model": "own_made",
+      "training_seed": 2,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_own_made_seed2_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_own_made_seed2_mc2",
+      "scale": "1000000",
+      "model": "own_made",
+      "training_seed": 2,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_own_made_seed2_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_official_resmade_seed2_mc0",
+      "scale": "1000000",
+      "model": "official_resmade",
+      "training_seed": 2,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_official_resmade_seed2_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_official_resmade_seed2_mc1",
+      "scale": "1000000",
+      "model": "official_resmade",
+      "training_seed": 2,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_official_resmade_seed2_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_official_resmade_seed2_mc2",
+      "scale": "1000000",
+      "model": "official_resmade",
+      "training_seed": 2,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/1000000_official_resmade_seed2_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_resmade_seed0_mc0",
+      "scale": "5000000",
+      "model": "own_resmade",
+      "training_seed": 0,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_own_resmade_seed0_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_resmade_seed0_mc1",
+      "scale": "5000000",
+      "model": "own_resmade",
+      "training_seed": 0,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_own_resmade_seed0_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_resmade_seed0_mc2",
+      "scale": "5000000",
+      "model": "own_resmade",
+      "training_seed": 0,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_own_resmade_seed0_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_made_seed0_mc0",
+      "scale": "5000000",
+      "model": "own_made",
+      "training_seed": 0,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_own_made_seed0_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_made_seed0_mc1",
+      "scale": "5000000",
+      "model": "own_made",
+      "training_seed": 0,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_own_made_seed0_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_made_seed0_mc2",
+      "scale": "5000000",
+      "model": "own_made",
+      "training_seed": 0,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_own_made_seed0_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_official_resmade_seed0_mc0",
+      "scale": "5000000",
+      "model": "official_resmade",
+      "training_seed": 0,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_official_resmade_seed0_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_official_resmade_seed0_mc1",
+      "scale": "5000000",
+      "model": "official_resmade",
+      "training_seed": 0,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_official_resmade_seed0_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_official_resmade_seed0_mc2",
+      "scale": "5000000",
+      "model": "official_resmade",
+      "training_seed": 0,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_official_resmade_seed0_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_resmade_seed1_mc0",
+      "scale": "5000000",
+      "model": "own_resmade",
+      "training_seed": 1,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_own_resmade_seed1_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_resmade_seed1_mc1",
+      "scale": "5000000",
+      "model": "own_resmade",
+      "training_seed": 1,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_own_resmade_seed1_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_resmade_seed1_mc2",
+      "scale": "5000000",
+      "model": "own_resmade",
+      "training_seed": 1,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_own_resmade_seed1_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_made_seed1_mc0",
+      "scale": "5000000",
+      "model": "own_made",
+      "training_seed": 1,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_own_made_seed1_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_made_seed1_mc1",
+      "scale": "5000000",
+      "model": "own_made",
+      "training_seed": 1,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_own_made_seed1_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_made_seed1_mc2",
+      "scale": "5000000",
+      "model": "own_made",
+      "training_seed": 1,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_own_made_seed1_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_official_resmade_seed1_mc0",
+      "scale": "5000000",
+      "model": "official_resmade",
+      "training_seed": 1,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_official_resmade_seed1_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_official_resmade_seed1_mc1",
+      "scale": "5000000",
+      "model": "official_resmade",
+      "training_seed": 1,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_official_resmade_seed1_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_official_resmade_seed1_mc2",
+      "scale": "5000000",
+      "model": "official_resmade",
+      "training_seed": 1,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_official_resmade_seed1_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_resmade_seed2_mc0",
+      "scale": "5000000",
+      "model": "own_resmade",
+      "training_seed": 2,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_own_resmade_seed2_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_resmade_seed2_mc1",
+      "scale": "5000000",
+      "model": "own_resmade",
+      "training_seed": 2,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_own_resmade_seed2_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_resmade_seed2_mc2",
+      "scale": "5000000",
+      "model": "own_resmade",
+      "training_seed": 2,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_own_resmade_seed2_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_made_seed2_mc0",
+      "scale": "5000000",
+      "model": "own_made",
+      "training_seed": 2,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_own_made_seed2_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_made_seed2_mc1",
+      "scale": "5000000",
+      "model": "own_made",
+      "training_seed": 2,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_own_made_seed2_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_made_seed2_mc2",
+      "scale": "5000000",
+      "model": "own_made",
+      "training_seed": 2,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_own_made_seed2_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_official_resmade_seed2_mc0",
+      "scale": "5000000",
+      "model": "official_resmade",
+      "training_seed": 2,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_official_resmade_seed2_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_official_resmade_seed2_mc1",
+      "scale": "5000000",
+      "model": "official_resmade",
+      "training_seed": 2,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_official_resmade_seed2_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_official_resmade_seed2_mc2",
+      "scale": "5000000",
+      "model": "official_resmade",
+      "training_seed": 2,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/5000000_official_resmade_seed2_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_resmade_seed0_mc0",
+      "scale": "full",
+      "model": "own_resmade",
+      "training_seed": 0,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_own_resmade_seed0_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_resmade_seed0_mc1",
+      "scale": "full",
+      "model": "own_resmade",
+      "training_seed": 0,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_own_resmade_seed0_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_resmade_seed0_mc2",
+      "scale": "full",
+      "model": "own_resmade",
+      "training_seed": 0,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_own_resmade_seed0_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_made_seed0_mc0",
+      "scale": "full",
+      "model": "own_made",
+      "training_seed": 0,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_own_made_seed0_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_made_seed0_mc1",
+      "scale": "full",
+      "model": "own_made",
+      "training_seed": 0,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_own_made_seed0_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_made_seed0_mc2",
+      "scale": "full",
+      "model": "own_made",
+      "training_seed": 0,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_own_made_seed0_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_official_resmade_seed0_mc0",
+      "scale": "full",
+      "model": "official_resmade",
+      "training_seed": 0,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_official_resmade_seed0_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_official_resmade_seed0_mc1",
+      "scale": "full",
+      "model": "official_resmade",
+      "training_seed": 0,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_official_resmade_seed0_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_official_resmade_seed0_mc2",
+      "scale": "full",
+      "model": "official_resmade",
+      "training_seed": 0,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_official_resmade_seed0_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_resmade_seed1_mc0",
+      "scale": "full",
+      "model": "own_resmade",
+      "training_seed": 1,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_own_resmade_seed1_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_resmade_seed1_mc1",
+      "scale": "full",
+      "model": "own_resmade",
+      "training_seed": 1,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_own_resmade_seed1_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_resmade_seed1_mc2",
+      "scale": "full",
+      "model": "own_resmade",
+      "training_seed": 1,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_own_resmade_seed1_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_made_seed1_mc0",
+      "scale": "full",
+      "model": "own_made",
+      "training_seed": 1,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_own_made_seed1_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_made_seed1_mc1",
+      "scale": "full",
+      "model": "own_made",
+      "training_seed": 1,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_own_made_seed1_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_made_seed1_mc2",
+      "scale": "full",
+      "model": "own_made",
+      "training_seed": 1,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_own_made_seed1_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_official_resmade_seed1_mc0",
+      "scale": "full",
+      "model": "official_resmade",
+      "training_seed": 1,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_official_resmade_seed1_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_official_resmade_seed1_mc1",
+      "scale": "full",
+      "model": "official_resmade",
+      "training_seed": 1,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_official_resmade_seed1_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_official_resmade_seed1_mc2",
+      "scale": "full",
+      "model": "official_resmade",
+      "training_seed": 1,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_official_resmade_seed1_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_resmade_seed2_mc0",
+      "scale": "full",
+      "model": "own_resmade",
+      "training_seed": 2,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_own_resmade_seed2_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_resmade_seed2_mc1",
+      "scale": "full",
+      "model": "own_resmade",
+      "training_seed": 2,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_own_resmade_seed2_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_resmade_seed2_mc2",
+      "scale": "full",
+      "model": "own_resmade",
+      "training_seed": 2,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_own_resmade_seed2_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_made_seed2_mc0",
+      "scale": "full",
+      "model": "own_made",
+      "training_seed": 2,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_own_made_seed2_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_made_seed2_mc1",
+      "scale": "full",
+      "model": "own_made",
+      "training_seed": 2,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_own_made_seed2_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_made_seed2_mc2",
+      "scale": "full",
+      "model": "own_made",
+      "training_seed": 2,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_own_made_seed2_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_official_resmade_seed2_mc0",
+      "scale": "full",
+      "model": "official_resmade",
+      "training_seed": 2,
+      "mc_seed": 0,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_official_resmade_seed2_mc0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_official_resmade_seed2_mc1",
+      "scale": "full",
+      "model": "official_resmade",
+      "training_seed": 2,
+      "mc_seed": 1,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_official_resmade_seed2_mc1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_official_resmade_seed2_mc2",
+      "scale": "full",
+      "model": "official_resmade",
+      "training_seed": 2,
+      "mc_seed": 2,
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_official_resmade_seed2_mc2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    }
+  ],
+  "scope": "joint_zero_nearzero",
+  "samples": 2000,
+  "mc_seeds": [
+    0,
+    1,
+    2
+  ],
+  "scales": [
+    "1000000",
+    "5000000",
+    "full"
+  ],
+  "models": [
+    "own_made",
+    "own_resmade",
+    "official_resmade"
+  ],
+  "training_seeds": [
+    0,
+    1,
+    2
+  ],
+  "expected_cells": 81,
+  "expected_queries_per_cell": 200,
+  "training_performed": false,
+  "gpu_check": "GPU-5bba126a-80d2-a7a3-b5df-c3e8b60589d3, 4, 0",
+  "active": "full_official_resmade_seed2_mc2"
+}

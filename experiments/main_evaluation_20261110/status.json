@@ -1,0 +1,174 @@
+{
+  "status": "COMPLETE",
+  "started": 1794301627.0444515,
+  "runs": [
+    {
+      "name": "1000000_own_resmade_seed0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/1000000_own_resmade_seed0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_own_made_seed0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/1000000_own_made_seed0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_official_resmade_seed0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/1000000_official_resmade_seed0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_own_resmade_seed1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/1000000_own_resmade_seed1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_own_made_seed1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/1000000_own_made_seed1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_official_resmade_seed1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/1000000_official_resmade_seed1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_own_resmade_seed2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/1000000_own_resmade_seed2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_own_made_seed2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/1000000_own_made_seed2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "1000000_official_resmade_seed2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/1000000_official_resmade_seed2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_resmade_seed0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/5000000_own_resmade_seed0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_made_seed0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/5000000_own_made_seed0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_official_resmade_seed0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/5000000_official_resmade_seed0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_resmade_seed1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/5000000_own_resmade_seed1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_made_seed1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/5000000_own_made_seed1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_official_resmade_seed1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/5000000_official_resmade_seed1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_resmade_seed2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/5000000_own_resmade_seed2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_own_made_seed2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/5000000_own_made_seed2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "5000000_official_resmade_seed2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/5000000_official_resmade_seed2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_resmade_seed0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/full_own_resmade_seed0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_made_seed0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/full_own_made_seed0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_official_resmade_seed0",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/full_official_resmade_seed0",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_resmade_seed1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/full_own_resmade_seed1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_made_seed1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/full_own_made_seed1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_official_resmade_seed1",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/full_official_resmade_seed1",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_resmade_seed2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/full_own_resmade_seed2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_own_made_seed2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/full_own_made_seed2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    },
+    {
+      "name": "full_official_resmade_seed2",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/full_official_resmade_seed2",
+      "status": "COMPLETE",
+      "exit_code": 0
+    }
+  ],
+  "sampling_budget": 2000,
+  "scope": "main_native",
+  "runtime": "shared unoptimized sampler for architecture accuracy; not official optimized latency",
+  "active": "full_official_resmade_seed2",
+  "gpu": "GPU-5bba126a-80d2-a7a3-b5df-c3e8b60589d3, 4, 0",
+  "updated": 1794303029.3719707
+}

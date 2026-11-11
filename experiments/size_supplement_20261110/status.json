@@ -1,0 +1,52 @@
+{
+  "status": "COMPLETE",
+  "runs": [
+    {
+      "name": "width128_seed0",
+      "status": "COMPLETE",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/size_supplement_20261110/width128_seed0",
+      "exit_code": 0
+    },
+    {
+      "name": "width128_seed1",
+      "status": "COMPLETE",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/size_supplement_20261110/width128_seed1",
+      "exit_code": 0
+    },
+    {
+      "name": "width128_seed2",
+      "status": "COMPLETE",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/size_supplement_20261110/width128_seed2",
+      "exit_code": 0
+    },
+    {
+      "name": "width512_seed0",
+      "status": "COMPLETE",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/size_supplement_20261110/width512_seed0",
+      "exit_code": 0
+    },
+    {
+      "name": "width512_seed1",
+      "status": "COMPLETE",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/size_supplement_20261110/width512_seed1",
+      "exit_code": 0
+    },
+    {
+      "name": "width512_seed2",
+      "status": "COMPLETE",
+      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/size_supplement_20261110/width512_seed2",
+      "exit_code": 0
+    }
+  ],
+  "fixed_widths": [
+    128,
+    512
+  ],
+  "reference_width": 256,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "active": "width512_seed2"
+}

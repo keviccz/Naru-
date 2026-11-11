@@ -1,0 +1,42 @@
+{
+  "status": "COMPLETE",
+  "started_at": "2026-11-09T08:26:22.426747+00:00",
+  "pid": 2095952,
+  "model": "own_made",
+  "scale": "full",
+  "seed": 0,
+  "epochs_requested": 2,
+  "epochs_completed": 2,
+  "steps_completed": 8,
+  "run_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/driver_smoke_own_made",
+  "checkpoint_policy": "rolling checkpoint.pt after each completed epoch",
+  "phase": "done",
+  "updated_at": "2026-11-09T08:26:24.755546+00:00",
+  "elapsed_seconds": 2.3424910083413124,
+  "checkpoint": "checkpoint.pt",
+  "last_epoch": {
+    "epoch": 2,
+    "rows": 256,
+    "mean_training_nll_nats": 2.328410565853119,
+    "elapsed_seconds": 0.012301713228225708,
+    "rows_per_second": 20810.109555522715,
+    "global_step": 8,
+    "last_lr": 0.01,
+    "peak_gpu_allocated_bytes": 68221440,
+    "peak_gpu_reserved_bytes": 69206016,
+    "process_peak_rss_bytes": 846901248
+  },
+  "ended_at": "2026-11-09T08:26:24.769225+00:00",
+  "exit_code": 0,
+  "result": {
+    "final_full_table_nll_nats": 2.247495651245117,
+    "evaluation_seconds": 0.01277458667755127,
+    "training_epochs": 2,
+    "training_steps": 8,
+    "rows": 256,
+    "checkpoint_bytes": 19483,
+    "peak_gpu_allocated_bytes": 68221440,
+    "peak_gpu_reserved_bytes": 69206016,
+    "process_peak_rss_bytes": 862494720
+  }
+}

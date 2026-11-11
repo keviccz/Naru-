@@ -1,0 +1,174 @@
+{
+  "status": "COMPLETE",
+  "runs": [
+    {
+      "name": "1000000_own_made_sample_seed0",
+      "status": "COMPLETE",
+      "rows": 117140,
+      "parameter_budget_bytes": 5154176
+    },
+    {
+      "name": "1000000_own_made_sample_seed1",
+      "status": "COMPLETE",
+      "rows": 117140,
+      "parameter_budget_bytes": 5154176
+    },
+    {
+      "name": "1000000_own_made_sample_seed2",
+      "status": "COMPLETE",
+      "rows": 117140,
+      "parameter_budget_bytes": 5154176
+    },
+    {
+      "name": "1000000_own_resmade_sample_seed0",
+      "status": "COMPLETE",
+      "rows": 160391,
+      "parameter_budget_bytes": 7057236
+    },
+    {
+      "name": "1000000_own_resmade_sample_seed1",
+      "status": "COMPLETE",
+      "rows": 160391,
+      "parameter_budget_bytes": 7057236
+    },
+    {
+      "name": "1000000_own_resmade_sample_seed2",
+      "status": "COMPLETE",
+      "rows": 160391,
+      "parameter_budget_bytes": 7057236
+    },
+    {
+      "name": "1000000_official_resmade_sample_seed0",
+      "status": "COMPLETE",
+      "rows": 160391,
+      "parameter_budget_bytes": 7057236
+    },
+    {
+      "name": "1000000_official_resmade_sample_seed1",
+      "status": "COMPLETE",
+      "rows": 160391,
+      "parameter_budget_bytes": 7057236
+    },
+    {
+      "name": "1000000_official_resmade_sample_seed2",
+      "status": "COMPLETE",
+      "rows": 160391,
+      "parameter_budget_bytes": 7057236
+    },
+    {
+      "name": "5000000_own_made_sample_seed0",
+      "status": "COMPLETE",
+      "rows": 126509,
+      "parameter_budget_bytes": 5566396
+    },
+    {
+      "name": "5000000_own_made_sample_seed1",
+      "status": "COMPLETE",
+      "rows": 126509,
+      "parameter_budget_bytes": 5566396
+    },
+    {
+      "name": "5000000_own_made_sample_seed2",
+      "status": "COMPLETE",
+      "rows": 126509,
+      "parameter_budget_bytes": 5566396
+    },
+    {
+      "name": "5000000_own_resmade_sample_seed0",
+      "status": "COMPLETE",
+      "rows": 172507,
+      "parameter_budget_bytes": 7590328
+    },
+    {
+      "name": "5000000_own_resmade_sample_seed1",
+      "status": "COMPLETE",
+      "rows": 172507,
+      "parameter_budget_bytes": 7590328
+    },
+    {
+      "name": "5000000_own_resmade_sample_seed2",
+      "status": "COMPLETE",
+      "rows": 172507,
+      "parameter_budget_bytes": 7590328
+    },
+    {
+      "name": "5000000_official_resmade_sample_seed0",
+      "status": "COMPLETE",
+      "rows": 172507,
+      "parameter_budget_bytes": 7590328
+    },
+    {
+      "name": "5000000_official_resmade_sample_seed1",
+      "status": "COMPLETE",
+      "rows": 172507,
+      "parameter_budget_bytes": 7590328
+    },
+    {
+      "name": "5000000_official_resmade_sample_seed2",
+      "status": "COMPLETE",
+      "rows": 172507,
+      "parameter_budget_bytes": 7590328
+    },
+    {
+      "name": "full_own_made_sample_seed0",
+      "status": "COMPLETE",
+      "rows": 130691,
+      "parameter_budget_bytes": 5750408
+    },
+    {
+      "name": "full_own_made_sample_seed1",
+      "status": "COMPLETE",
+      "rows": 130691,
+      "parameter_budget_bytes": 5750408
+    },
+    {
+      "name": "full_own_made_sample_seed2",
+      "status": "COMPLETE",
+      "rows": 130691,
+      "parameter_budget_bytes": 5750408
+    },
+    {
+      "name": "full_own_resmade_sample_seed0",
+      "status": "COMPLETE",
+      "rows": 177600,
+      "parameter_budget_bytes": 7814436
+    },
+    {
+      "name": "full_own_resmade_sample_seed1",
+      "status": "COMPLETE",
+      "rows": 177600,
+      "parameter_budget_bytes": 7814436
+    },
+    {
+      "name": "full_own_resmade_sample_seed2",
+      "status": "COMPLETE",
+      "rows": 177600,
+      "parameter_budget_bytes": 7814436
+    },
+    {
+      "name": "full_official_resmade_sample_seed0",
+      "status": "COMPLETE",
+      "rows": 177600,
+      "parameter_budget_bytes": 7814436
+    },
+    {
+      "name": "full_official_resmade_sample_seed1",
+      "status": "COMPLETE",
+      "rows": 177600,
+      "parameter_budget_bytes": 7814436
+    },
+    {
+      "name": "full_official_resmade_sample_seed2",
+      "status": "COMPLETE",
+      "rows": 177600,
+      "parameter_budget_bytes": 7814436
+    }
+  ],
+  "storage_contract": "logical FP32 trainable parameters vs materialized int32 sample rows; same per-scale dictionary excluded from both; no index",
+  "sample_seeds": [
+    0,
+    1,
+    2
+  ],
+  "active": "full_official_resmade_sample_seed2"
+}

@@ -1,0 +1,11 @@
+{
+  "source_policy": "Byte copies of current project implementation and unmodified fixed upstream MADE, not a second independent implementation.",
+  "original_files": [
+    "src/models.py",
+    "src/baselines.py",
+    "vendor/naru/made.py"
+  ],
+  "vendor_commit": "264cf4e9c96c9e34422f9eebc455a714aeef0b57",
+  "dataset": "Deterministic synthetic CSV, 2048 rows, seed20261111, includes SQL NULL and distinct empty string",
+  "formal_checkpoint_scope": "No DMV formal checkpoint modified or retrained"
+}

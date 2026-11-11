@@ -1,0 +1,28 @@
+{
+  "source": "https://data.ny.gov/resource/w4pv-hbkt.json",
+  "rowsUpdatedAt": 1793676989,
+  "expected_rows": 12540479,
+  "columns": [
+    "record_type",
+    "registration_class",
+    "state",
+    "county",
+    "body_type",
+    "fuel_type",
+    "reg_valid_date",
+    "color",
+    "scofflaw_indicator",
+    "suspension_indicator",
+    "revocation_indicator"
+  ],
+  "network_policy": "USER_AUTHORIZED_PROXY",
+  "status": "COMPLETE",
+  "rows_written": 12540479,
+  "resumed_from": "F:\\CITYU_FILES\\202609DSC5003C62\\Project\\Naru_Lab_20261109\\data\\snapshot_resume_20261109_163627",
+  "started": "2026-11-09T09:29:15.487906+00:00",
+  "page_size": 10000,
+  "workers": 4,
+  "null_sentinel": "__NARU_NULL__",
+  "bytes": 785677985,
+  "finished": "2026-11-09T09:30:00.014654+00:00"
+}

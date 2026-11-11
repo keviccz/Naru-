@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pt
+*.npy
+*.log
+.venv/
+/data/**/dmv.csv*

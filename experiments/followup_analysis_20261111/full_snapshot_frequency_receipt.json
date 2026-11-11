@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETE",
+  "rows": 12540479,
+  "columns": 11,
+  "source": "data\\snapshot_resume_20261109_172915\\dmv.csv",
+  "source_bytes": 785677985,
+  "elapsed_seconds": 34.00754130000132,
+  "scope": "Exact full snapshot frequencies only; not per-subset marginals"
+}

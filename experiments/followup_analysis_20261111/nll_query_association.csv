@@ -1,0 +1,3 @@
+scale,model,fits,widths,target,spearman_nll_vs_query,interpretation
+1000000,own_resmade,9,128/256/512,qerror_p95,0.36666666666666664,"Descriptive only; width and seed vary, n=9, no causal or significance inference"
+1000000,own_resmade,9,128/256/512,qerror_p99,0.4666666666666667,"Descriptive only; width and seed vary, n=9, no causal or significance inference"

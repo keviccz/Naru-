@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETE",
+  "queries_completed": 1100,
+  "arguments": {
+    "run": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_matrix_20261109/5000000_own_made_seed2",
+    "queries": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/workload_supplement_20261110/5000000/predicate_sweep.jsonl",
+    "output": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/workload_eval_supplement_v2_20261110/5000000_own_made_seed2_predicate_sweep",
+    "samples": 2000,
+    "sample_rows": 10000,
+    "scope": "predicate_sweep",
+    "mc_seed": 0,
+    "skip_baselines": true
+  },
+  "gpu_uuid": "GPU-5bba126a-80d2-a7a3-b5df-c3e8b60589d3"
+}

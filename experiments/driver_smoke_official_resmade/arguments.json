@@ -1,0 +1,15 @@
+{
+  "purpose": "synthetic_check",
+  "encoded_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/synthetic_driver_check",
+  "scale": "full",
+  "model": "official_resmade",
+  "seed": 0,
+  "epochs": 2,
+  "batch": 64,
+  "width": 24,
+  "layers": 3,
+  "warmups": 0,
+  "log_every": 100,
+  "threads": 4,
+  "run_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/driver_smoke_official_resmade"
+}

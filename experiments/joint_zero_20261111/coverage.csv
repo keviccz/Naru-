@@ -1,0 +1,4 @@
+scale,queries,pairs,unique_semantics,all_marginal_counts_positive,positive_min,positive_max
+1000000,200,100,200,True,1,10
+5000000,200,100,200,True,1,10
+full,200,100,200,True,1,10

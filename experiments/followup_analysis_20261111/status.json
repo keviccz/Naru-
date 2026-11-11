@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE",
+  "ended_unix": 1794394742.4881995,
+  "tables": {
+    "paired_rankings.csv": 27,
+    "paired_seed_consistency.csv": 9,
+    "mc_spread_by_training_seed.csv": 36,
+    "training_vs_mc_spread.csv": 12,
+    "tail_groups.csv": 567,
+    "tail_cases_top10.csv": 90,
+    "predicate_extremes.csv": 54,
+    "nontrivial_zero_summary.csv": 22,
+    "convergence_by_run.csv": 33,
+    "nll_query_points.csv": 33,
+    "accuracy_cost_by_run.csv": 93,
+    "nll_query_association.csv": 2
+  },
+  "audit": "audit.json",
+  "analysis": "ANALYSIS.md"
+}

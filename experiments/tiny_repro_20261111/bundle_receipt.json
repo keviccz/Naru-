@@ -1,0 +1,24 @@
+{
+  "time": "2026-11-11T11:04:13.150253+00:00",
+  "operation": "Naru_Lab_20261109/scripts/tiny_repro_bundle.py",
+  "kernel_id": "8f55890c-d97e-40ee-ae7d-aa430f9990cc",
+  "messages": [
+    {
+      "type": "stream",
+      "content": {
+        "name": "stdout",
+        "text": "{\"status\": \"BUNDLED\", \"bytes\": 75551, \"run_status\": \"COMPLETE\", \"package_dependencies\": 12}\n"
+      }
+    },
+    {
+      "type": "execute_reply",
+      "content": {
+        "status": "ok",
+        "execution_count": 0,
+        "user_expressions": {},
+        "payload": []
+      }
+    }
+  ],
+  "kernel_cleanup_http": 204
+}

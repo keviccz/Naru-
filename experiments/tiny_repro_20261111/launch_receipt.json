@@ -1,0 +1,15 @@
+{
+  "time": "2026-11-11T11:02:55.569953+00:00",
+  "operation": "Naru_Lab_20261109/scripts/tiny_repro_launch.py",
+  "kernel_id": "76e1afba-4744-44e5-9ade-925876a0abc9",
+  "messages": [
+    {
+      "type": "stream",
+      "content": {
+        "name": "stdout",
+        "text": "{\"pid\": 2678861, \"status\": \"LAUNCHED\", \"scope\": \"private clean CPU tiny end-to-end; no formal retraining\"}\n"
+      }
+    }
+  ],
+  "kernel_cleanup_http": 204
+}

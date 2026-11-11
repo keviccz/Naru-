@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETE",
+  "supported_checks_per_version": 24,
+  "supported_passed_per_version": 24,
+  "versions": ["2.4.1+cu121", "1.13.1+cpu"],
+  "cross_version_mc_checks": 48,
+  "cross_version_mc_passed": 48,
+  "upstream_native_unsupported_case_types": 2,
+  "upstream_native_unsupported_cases": ["all_wildcards", "one_filter"],
+  "unsupported_excluded_from_pass_count": true,
+  "device": "CPU only",
+  "scope": "Finite CPU inference correctness and short training API compatibility; no GPU latency or historical full-training reproduction claim",
+  "audit": "audit.json",
+  "results": "RESULTS.md",
+  "raw_outputs_preserved": true
+}

@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "queries": 2000,
+  "scale": "full",
+  "reference_model": "own_made",
+  "sample_seed": 0,
+  "parameter_budget_bytes": 5750408,
+  "sample_rows": 130691,
+  "sample_array_bytes": 5750404,
+  "reference_checkpoint_bytes": 5750408,
+  "shared_dictionary_policy": "excluded both sides",
+  "qerror_median": 1.0200294620627415,
+  "qerror_p95": 2.892426078780558,
+  "qerror_p99": 60.01999999999998,
+  "qerror_max": 260.0,
+  "latency_median_ms": 4.015319049358368
+}

@@ -1,0 +1,4 @@
+scale,method,positive_queries,zero_queries,positive_qerror_median,positive_qerror_p95,positive_qerror_p99,positive_qerror_max,positive_estimate_eq0,positive_estimate_lt1,zero_estimate_median,zero_estimate_mean,zero_estimate_p95,zero_estimate_max,zero_estimate_gt1,zero_estimate_gt10,zero_estimate_gt100,pair_strict_separation_fraction,pair_tie_fraction,pair_half_tie_score
+1000000,constant_zero_sanity,100,100,3.0,10.0,10.0,10.0,100,100,0.0,0.0,0.0,0.0,0,0,0,0.0,1.0,0.5
+5000000,constant_zero_sanity,100,100,4.0,10.0,10.0,10.0,100,100,0.0,0.0,0.0,0.0,0,0,0,0.0,1.0,0.5
+full,constant_zero_sanity,100,100,5.0,10.0,10.0,10.0,100,100,0.0,0.0,0.0,0.0,0,0,0,0.0,1.0,0.5

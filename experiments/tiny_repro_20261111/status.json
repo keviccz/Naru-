@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE",
+  "phase": "done",
+  "started_server_unix": 1794394567.939887,
+  "device": "CPU",
+  "formal_model_changes": false,
+  "packages": 10,
+  "result": {
+    "status": "COMPLETE",
+    "phase": "done",
+    "started_utc": "2026-11-11T10:56:38.793961+00:00",
+    "model": "official_resmade",
+    "checks": 84,
+    "training_cells": 3,
+    "raw_rows": 70,
+    "epochs_per_model": 80,
+    "ended_utc": "2026-11-11T10:56:48.269481+00:00"
+  },
+  "ended_server_unix": 1794394611.8473926,
+  "exit_code": 0
+}

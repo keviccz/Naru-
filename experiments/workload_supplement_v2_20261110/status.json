@@ -1,0 +1,113 @@
+{
+  "status": "COMPLETE",
+  "source_v1": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/workload_supplement_20261110",
+  "snapshot": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915",
+  "preserve_v1": true,
+  "reason": "v1 column index j%2 and operator j%2 were coupled, covering fuel_type IS NULL and color IS NOT NULL only",
+  "repair": "enumerate product of nullable columns and both NULL operators first, then cycle 25 times per pair",
+  "counts_per_scale": 300,
+  "scales": {
+    "1000000": {
+      "status": "COMPLETE",
+      "rows": 1000000,
+      "queries": 300,
+      "zero_results": 125,
+      "NULL_coverage": [
+        {
+          "column": "fuel_type",
+          "operator": "IS NULL",
+          "queries": 25,
+          "truth": 1251
+        },
+        {
+          "column": "fuel_type",
+          "operator": "IS NOT NULL",
+          "queries": 25,
+          "truth": 998749
+        },
+        {
+          "column": "color",
+          "operator": "IS NULL",
+          "queries": 25,
+          "truth": 28532
+        },
+        {
+          "column": "color",
+          "operator": "IS NOT NULL",
+          "queries": 25,
+          "truth": 971468
+        }
+      ],
+      "independent_SQL_check": "SQLite SUM(frequency) over raw-value frequencies independently obtained using np.unique; not Oracle bincount; 4 conditions verified"
+    },
+    "5000000": {
+      "status": "COMPLETE",
+      "rows": 5000000,
+      "queries": 300,
+      "zero_results": 125,
+      "NULL_coverage": [
+        {
+          "column": "fuel_type",
+          "operator": "IS NULL",
+          "queries": 25,
+          "truth": 6295
+        },
+        {
+          "column": "fuel_type",
+          "operator": "IS NOT NULL",
+          "queries": 25,
+          "truth": 4993705
+        },
+        {
+          "column": "color",
+          "operator": "IS NULL",
+          "queries": 25,
+          "truth": 143681
+        },
+        {
+          "column": "color",
+          "operator": "IS NOT NULL",
+          "queries": 25,
+          "truth": 4856319
+        }
+      ],
+      "independent_SQL_check": "SQLite SUM(frequency) over raw-value frequencies independently obtained using np.unique; not Oracle bincount; 4 conditions verified"
+    },
+    "full": {
+      "status": "COMPLETE",
+      "rows": 12540479,
+      "queries": 300,
+      "zero_results": 125,
+      "NULL_coverage": [
+        {
+          "column": "fuel_type",
+          "operator": "IS NULL",
+          "queries": 25,
+          "truth": 15500
+        },
+        {
+          "column": "fuel_type",
+          "operator": "IS NOT NULL",
+          "queries": 25,
+          "truth": 12524979
+        },
+        {
+          "column": "color",
+          "operator": "IS NULL",
+          "queries": 25,
+          "truth": 360312
+        },
+        {
+          "column": "color",
+          "operator": "IS NOT NULL",
+          "queries": 25,
+          "truth": 12180167
+        }
+      ],
+      "independent_SQL_check": "SQLite SUM(frequency) over raw-value frequencies independently obtained using np.unique; not Oracle bincount; 4 conditions verified"
+    }
+  },
+  "started_utc": "2026-11-10T14:30:42.426042+00:00",
+  "elapsed_seconds": 3.486025333404541,
+  "finished_utc": "2026-11-10T14:30:45.912926+00:00"
+}

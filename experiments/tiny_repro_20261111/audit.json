@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "clean_runtime_dependencies": {
+    "torch": "2.4.1+cpu",
+    "numpy": "1.24.4",
+    "filelock": "3.16.1",
+    "typing-extensions": "4.12.2",
+    "sympy": "1.13.3",
+    "mpmath": "1.3.0",
+    "networkx": "3.1",
+    "jinja2": "3.1.6",
+    "markupsafe": "2.1.5",
+    "fsspec": "2024.9.0"
+  },
+  "bootstrap_packages": {
+    "pip": "21.1.1",
+    "setuptools": "56.0.0"
+  },
+  "sql_queries_independently_recounted": 14,
+  "tiny_model_fits": 3,
+  "epochs_per_model": 80,
+  "training_curve_rows": 240,
+  "raw_estimates_independently_checked": 70,
+  "runtime_checks_passed": 84,
+  "source_copy_audit": "PASS",
+  "shared_environment_unchanged": true,
+  "scope": "Clean project-private CPU environment functional end-to-end acceptance; not fresh OS/container, DMV accuracy, GPU runtime, or formal training reproducibility claim"
+}

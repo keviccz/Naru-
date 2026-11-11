@@ -1,0 +1,799 @@
+{
+  "status": "COMPLETE",
+  "runs": [
+    {
+      "name": "1000000_scale_shared_exact_marginal_independence_seedNone",
+      "scale": "1000000",
+      "scope": "scale_shared",
+      "method": "exact_marginal_independence",
+      "sample_seed": null,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_scale_shared_uniform_sample_10000_seed20261109",
+      "scale": "1000000",
+      "scope": "scale_shared",
+      "method": "uniform_sample_10000",
+      "sample_seed": 20261109,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_scale_shared_matched_own_made_seed0",
+      "scale": "1000000",
+      "scope": "scale_shared",
+      "method": "matched_own_made",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_scale_shared_matched_own_made_seed1",
+      "scale": "1000000",
+      "scope": "scale_shared",
+      "method": "matched_own_made",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_scale_shared_matched_own_made_seed2",
+      "scale": "1000000",
+      "scope": "scale_shared",
+      "method": "matched_own_made",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_scale_shared_matched_own_resmade_seed0",
+      "scale": "1000000",
+      "scope": "scale_shared",
+      "method": "matched_own_resmade",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_scale_shared_matched_own_resmade_seed1",
+      "scale": "1000000",
+      "scope": "scale_shared",
+      "method": "matched_own_resmade",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_scale_shared_matched_own_resmade_seed2",
+      "scale": "1000000",
+      "scope": "scale_shared",
+      "method": "matched_own_resmade",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_scale_shared_matched_official_resmade_seed0",
+      "scale": "1000000",
+      "scope": "scale_shared",
+      "method": "matched_official_resmade",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_scale_shared_matched_official_resmade_seed1",
+      "scale": "1000000",
+      "scope": "scale_shared",
+      "method": "matched_official_resmade",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_scale_shared_matched_official_resmade_seed2",
+      "scale": "1000000",
+      "scope": "scale_shared",
+      "method": "matched_official_resmade",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_predicate_sweep_exact_marginal_independence_seedNone",
+      "scale": "1000000",
+      "scope": "predicate_sweep",
+      "method": "exact_marginal_independence",
+      "sample_seed": null,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_predicate_sweep_uniform_sample_10000_seed20261109",
+      "scale": "1000000",
+      "scope": "predicate_sweep",
+      "method": "uniform_sample_10000",
+      "sample_seed": 20261109,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_predicate_sweep_matched_own_made_seed0",
+      "scale": "1000000",
+      "scope": "predicate_sweep",
+      "method": "matched_own_made",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_predicate_sweep_matched_own_made_seed1",
+      "scale": "1000000",
+      "scope": "predicate_sweep",
+      "method": "matched_own_made",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_predicate_sweep_matched_own_made_seed2",
+      "scale": "1000000",
+      "scope": "predicate_sweep",
+      "method": "matched_own_made",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_predicate_sweep_matched_own_resmade_seed0",
+      "scale": "1000000",
+      "scope": "predicate_sweep",
+      "method": "matched_own_resmade",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_predicate_sweep_matched_own_resmade_seed1",
+      "scale": "1000000",
+      "scope": "predicate_sweep",
+      "method": "matched_own_resmade",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_predicate_sweep_matched_own_resmade_seed2",
+      "scale": "1000000",
+      "scope": "predicate_sweep",
+      "method": "matched_own_resmade",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_predicate_sweep_matched_official_resmade_seed0",
+      "scale": "1000000",
+      "scope": "predicate_sweep",
+      "method": "matched_official_resmade",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_predicate_sweep_matched_official_resmade_seed1",
+      "scale": "1000000",
+      "scope": "predicate_sweep",
+      "method": "matched_official_resmade",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_predicate_sweep_matched_official_resmade_seed2",
+      "scale": "1000000",
+      "scope": "predicate_sweep",
+      "method": "matched_official_resmade",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_stress_exact_marginal_independence_seedNone",
+      "scale": "1000000",
+      "scope": "stress",
+      "method": "exact_marginal_independence",
+      "sample_seed": null,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_stress_uniform_sample_10000_seed20261109",
+      "scale": "1000000",
+      "scope": "stress",
+      "method": "uniform_sample_10000",
+      "sample_seed": 20261109,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_stress_matched_own_made_seed0",
+      "scale": "1000000",
+      "scope": "stress",
+      "method": "matched_own_made",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_stress_matched_own_made_seed1",
+      "scale": "1000000",
+      "scope": "stress",
+      "method": "matched_own_made",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_stress_matched_own_made_seed2",
+      "scale": "1000000",
+      "scope": "stress",
+      "method": "matched_own_made",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_stress_matched_own_resmade_seed0",
+      "scale": "1000000",
+      "scope": "stress",
+      "method": "matched_own_resmade",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_stress_matched_own_resmade_seed1",
+      "scale": "1000000",
+      "scope": "stress",
+      "method": "matched_own_resmade",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_stress_matched_own_resmade_seed2",
+      "scale": "1000000",
+      "scope": "stress",
+      "method": "matched_own_resmade",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_stress_matched_official_resmade_seed0",
+      "scale": "1000000",
+      "scope": "stress",
+      "method": "matched_official_resmade",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_stress_matched_official_resmade_seed1",
+      "scale": "1000000",
+      "scope": "stress",
+      "method": "matched_official_resmade",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "1000000_stress_matched_official_resmade_seed2",
+      "scale": "1000000",
+      "scope": "stress",
+      "method": "matched_official_resmade",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_scale_shared_exact_marginal_independence_seedNone",
+      "scale": "5000000",
+      "scope": "scale_shared",
+      "method": "exact_marginal_independence",
+      "sample_seed": null,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_scale_shared_uniform_sample_10000_seed20261109",
+      "scale": "5000000",
+      "scope": "scale_shared",
+      "method": "uniform_sample_10000",
+      "sample_seed": 20261109,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_scale_shared_matched_own_made_seed0",
+      "scale": "5000000",
+      "scope": "scale_shared",
+      "method": "matched_own_made",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_scale_shared_matched_own_made_seed1",
+      "scale": "5000000",
+      "scope": "scale_shared",
+      "method": "matched_own_made",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_scale_shared_matched_own_made_seed2",
+      "scale": "5000000",
+      "scope": "scale_shared",
+      "method": "matched_own_made",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_scale_shared_matched_own_resmade_seed0",
+      "scale": "5000000",
+      "scope": "scale_shared",
+      "method": "matched_own_resmade",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_scale_shared_matched_own_resmade_seed1",
+      "scale": "5000000",
+      "scope": "scale_shared",
+      "method": "matched_own_resmade",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_scale_shared_matched_own_resmade_seed2",
+      "scale": "5000000",
+      "scope": "scale_shared",
+      "method": "matched_own_resmade",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_scale_shared_matched_official_resmade_seed0",
+      "scale": "5000000",
+      "scope": "scale_shared",
+      "method": "matched_official_resmade",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_scale_shared_matched_official_resmade_seed1",
+      "scale": "5000000",
+      "scope": "scale_shared",
+      "method": "matched_official_resmade",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_scale_shared_matched_official_resmade_seed2",
+      "scale": "5000000",
+      "scope": "scale_shared",
+      "method": "matched_official_resmade",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_predicate_sweep_exact_marginal_independence_seedNone",
+      "scale": "5000000",
+      "scope": "predicate_sweep",
+      "method": "exact_marginal_independence",
+      "sample_seed": null,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_predicate_sweep_uniform_sample_10000_seed20261109",
+      "scale": "5000000",
+      "scope": "predicate_sweep",
+      "method": "uniform_sample_10000",
+      "sample_seed": 20261109,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_predicate_sweep_matched_own_made_seed0",
+      "scale": "5000000",
+      "scope": "predicate_sweep",
+      "method": "matched_own_made",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_predicate_sweep_matched_own_made_seed1",
+      "scale": "5000000",
+      "scope": "predicate_sweep",
+      "method": "matched_own_made",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_predicate_sweep_matched_own_made_seed2",
+      "scale": "5000000",
+      "scope": "predicate_sweep",
+      "method": "matched_own_made",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_predicate_sweep_matched_own_resmade_seed0",
+      "scale": "5000000",
+      "scope": "predicate_sweep",
+      "method": "matched_own_resmade",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_predicate_sweep_matched_own_resmade_seed1",
+      "scale": "5000000",
+      "scope": "predicate_sweep",
+      "method": "matched_own_resmade",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_predicate_sweep_matched_own_resmade_seed2",
+      "scale": "5000000",
+      "scope": "predicate_sweep",
+      "method": "matched_own_resmade",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_predicate_sweep_matched_official_resmade_seed0",
+      "scale": "5000000",
+      "scope": "predicate_sweep",
+      "method": "matched_official_resmade",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_predicate_sweep_matched_official_resmade_seed1",
+      "scale": "5000000",
+      "scope": "predicate_sweep",
+      "method": "matched_official_resmade",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_predicate_sweep_matched_official_resmade_seed2",
+      "scale": "5000000",
+      "scope": "predicate_sweep",
+      "method": "matched_official_resmade",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_stress_exact_marginal_independence_seedNone",
+      "scale": "5000000",
+      "scope": "stress",
+      "method": "exact_marginal_independence",
+      "sample_seed": null,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_stress_uniform_sample_10000_seed20261109",
+      "scale": "5000000",
+      "scope": "stress",
+      "method": "uniform_sample_10000",
+      "sample_seed": 20261109,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_stress_matched_own_made_seed0",
+      "scale": "5000000",
+      "scope": "stress",
+      "method": "matched_own_made",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_stress_matched_own_made_seed1",
+      "scale": "5000000",
+      "scope": "stress",
+      "method": "matched_own_made",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_stress_matched_own_made_seed2",
+      "scale": "5000000",
+      "scope": "stress",
+      "method": "matched_own_made",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_stress_matched_own_resmade_seed0",
+      "scale": "5000000",
+      "scope": "stress",
+      "method": "matched_own_resmade",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_stress_matched_own_resmade_seed1",
+      "scale": "5000000",
+      "scope": "stress",
+      "method": "matched_own_resmade",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_stress_matched_own_resmade_seed2",
+      "scale": "5000000",
+      "scope": "stress",
+      "method": "matched_own_resmade",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_stress_matched_official_resmade_seed0",
+      "scale": "5000000",
+      "scope": "stress",
+      "method": "matched_official_resmade",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_stress_matched_official_resmade_seed1",
+      "scale": "5000000",
+      "scope": "stress",
+      "method": "matched_official_resmade",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "5000000_stress_matched_official_resmade_seed2",
+      "scale": "5000000",
+      "scope": "stress",
+      "method": "matched_official_resmade",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_scale_shared_exact_marginal_independence_seedNone",
+      "scale": "full",
+      "scope": "scale_shared",
+      "method": "exact_marginal_independence",
+      "sample_seed": null,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_scale_shared_uniform_sample_10000_seed20261109",
+      "scale": "full",
+      "scope": "scale_shared",
+      "method": "uniform_sample_10000",
+      "sample_seed": 20261109,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_scale_shared_matched_own_made_seed0",
+      "scale": "full",
+      "scope": "scale_shared",
+      "method": "matched_own_made",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_scale_shared_matched_own_made_seed1",
+      "scale": "full",
+      "scope": "scale_shared",
+      "method": "matched_own_made",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_scale_shared_matched_own_made_seed2",
+      "scale": "full",
+      "scope": "scale_shared",
+      "method": "matched_own_made",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_scale_shared_matched_own_resmade_seed0",
+      "scale": "full",
+      "scope": "scale_shared",
+      "method": "matched_own_resmade",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_scale_shared_matched_own_resmade_seed1",
+      "scale": "full",
+      "scope": "scale_shared",
+      "method": "matched_own_resmade",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_scale_shared_matched_own_resmade_seed2",
+      "scale": "full",
+      "scope": "scale_shared",
+      "method": "matched_own_resmade",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_scale_shared_matched_official_resmade_seed0",
+      "scale": "full",
+      "scope": "scale_shared",
+      "method": "matched_official_resmade",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_scale_shared_matched_official_resmade_seed1",
+      "scale": "full",
+      "scope": "scale_shared",
+      "method": "matched_official_resmade",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_scale_shared_matched_official_resmade_seed2",
+      "scale": "full",
+      "scope": "scale_shared",
+      "method": "matched_official_resmade",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_predicate_sweep_exact_marginal_independence_seedNone",
+      "scale": "full",
+      "scope": "predicate_sweep",
+      "method": "exact_marginal_independence",
+      "sample_seed": null,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_predicate_sweep_uniform_sample_10000_seed20261109",
+      "scale": "full",
+      "scope": "predicate_sweep",
+      "method": "uniform_sample_10000",
+      "sample_seed": 20261109,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_predicate_sweep_matched_own_made_seed0",
+      "scale": "full",
+      "scope": "predicate_sweep",
+      "method": "matched_own_made",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_predicate_sweep_matched_own_made_seed1",
+      "scale": "full",
+      "scope": "predicate_sweep",
+      "method": "matched_own_made",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_predicate_sweep_matched_own_made_seed2",
+      "scale": "full",
+      "scope": "predicate_sweep",
+      "method": "matched_own_made",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_predicate_sweep_matched_own_resmade_seed0",
+      "scale": "full",
+      "scope": "predicate_sweep",
+      "method": "matched_own_resmade",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_predicate_sweep_matched_own_resmade_seed1",
+      "scale": "full",
+      "scope": "predicate_sweep",
+      "method": "matched_own_resmade",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_predicate_sweep_matched_own_resmade_seed2",
+      "scale": "full",
+      "scope": "predicate_sweep",
+      "method": "matched_own_resmade",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_predicate_sweep_matched_official_resmade_seed0",
+      "scale": "full",
+      "scope": "predicate_sweep",
+      "method": "matched_official_resmade",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_predicate_sweep_matched_official_resmade_seed1",
+      "scale": "full",
+      "scope": "predicate_sweep",
+      "method": "matched_official_resmade",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_predicate_sweep_matched_official_resmade_seed2",
+      "scale": "full",
+      "scope": "predicate_sweep",
+      "method": "matched_official_resmade",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_stress_exact_marginal_independence_seedNone",
+      "scale": "full",
+      "scope": "stress",
+      "method": "exact_marginal_independence",
+      "sample_seed": null,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_stress_uniform_sample_10000_seed20261109",
+      "scale": "full",
+      "scope": "stress",
+      "method": "uniform_sample_10000",
+      "sample_seed": 20261109,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_stress_matched_own_made_seed0",
+      "scale": "full",
+      "scope": "stress",
+      "method": "matched_own_made",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_stress_matched_own_made_seed1",
+      "scale": "full",
+      "scope": "stress",
+      "method": "matched_own_made",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_stress_matched_own_made_seed2",
+      "scale": "full",
+      "scope": "stress",
+      "method": "matched_own_made",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_stress_matched_own_resmade_seed0",
+      "scale": "full",
+      "scope": "stress",
+      "method": "matched_own_resmade",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_stress_matched_own_resmade_seed1",
+      "scale": "full",
+      "scope": "stress",
+      "method": "matched_own_resmade",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_stress_matched_own_resmade_seed2",
+      "scale": "full",
+      "scope": "stress",
+      "method": "matched_own_resmade",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_stress_matched_official_resmade_seed0",
+      "scale": "full",
+      "scope": "stress",
+      "method": "matched_official_resmade",
+      "sample_seed": 0,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_stress_matched_official_resmade_seed1",
+      "scale": "full",
+      "scope": "stress",
+      "method": "matched_official_resmade",
+      "sample_seed": 1,
+      "status": "COMPLETE"
+    },
+    {
+      "name": "full_stress_matched_official_resmade_seed2",
+      "scale": "full",
+      "scope": "stress",
+      "method": "matched_official_resmade",
+      "sample_seed": 2,
+      "status": "COMPLETE"
+    }
+  ],
+  "storage_contract": "logical FP32 parameter bytes vs int32 sample row bytes; shared dictionaries excluded both sides",
+  "active": "full_stress_matched_official_resmade_seed2"
+}
