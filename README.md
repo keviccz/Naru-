@@ -121,7 +121,7 @@ All learned models cut the tail error by one to three orders of magnitude relati
 
 - Replication, baselines, PostgreSQL comparison and supplementary experiments: complete.
 - Model improvements (column ordering, matched optimisation budget, embedding inputs for large domains): in progress.
-- Figures and result write-up: in progress (`docs/`).
+- Figures: `figures/` (PNG + PDF), rebuilt by `python analysis/make_figures.py` (matplotlib, numpy, pandas); plotted numbers in `analysis/tables/`. Chinese result notes for the team: `docs/RESULTS_zh.md`.
 
 ## References
 

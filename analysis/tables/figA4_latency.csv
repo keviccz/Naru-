@@ -1,0 +1,25 @@
+scale,method,ms,kind
+1000000,own_made,14.566365629434586,GPU inference
+1000000,own_resmade,17.608433961868286,GPU inference
+1000000,official_resmade,17.983026802539825,GPU inference
+1000000,exact_marginal_independence,0.044308602809906006,CPU
+1000000,uniform_sample,0.31034648418426514,CPU
+5000000,own_made,14.965694397687912,GPU inference
+5000000,own_resmade,18.032748252153397,GPU inference
+5000000,official_resmade,18.41866225004196,GPU inference
+5000000,exact_marginal_independence,0.06569176912307739,CPU
+5000000,uniform_sample,0.33789873123168945,CPU
+full,own_made,15.064135193824768,GPU inference
+full,own_resmade,18.11728999018669,GPU inference
+full,official_resmade,18.48689094185829,GPU inference
+full,exact_marginal_independence,0.061318278312683105,CPU
+full,uniform_sample,0.33971667289733887,CPU
+1000000,PG-default,0.028200500000000014,PG planning (mean)
+1000000,PG-extstats,0.0638995,PG planning (mean)
+1000000,PG-target1000,0.038027,PG planning (mean)
+5000000,PG-default,0.02801200000000001,PG planning (mean)
+5000000,PG-extstats,0.062359500000000005,PG planning (mean)
+5000000,PG-target1000,0.0384645,PG planning (mean)
+full,PG-default,0.02793200000000001,PG planning (mean)
+full,PG-extstats,0.0620355,PG planning (mean)
+full,PG-target1000,0.03868850000000001,PG planning (mean)
