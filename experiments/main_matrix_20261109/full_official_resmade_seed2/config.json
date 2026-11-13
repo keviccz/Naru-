@@ -1,6 +1,6 @@
 {
   "purpose": "benchmark",
-  "encoded_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/encoded",
+  "encoded_dir": "<SERVER_ROOT>/data/snapshot_resume_20261109_172915/encoded",
   "scale": "full",
   "model": "official_resmade",
   "seed": 2,
@@ -11,9 +11,9 @@
   "warmups": 8000,
   "log_every": 100,
   "threads": 4,
-  "run_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_matrix_20261109/full_official_resmade_seed2",
-  "data_path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/encoded/full.npy",
-  "domain_path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/encoded/full_domains.json",
+  "run_dir": "<SERVER_ROOT>/experiments/main_matrix_20261109/full_official_resmade_seed2",
+  "data_path": "<SERVER_ROOT>/data/snapshot_resume_20261109_172915/encoded/full.npy",
+  "domain_path": "<SERVER_ROOT>/data/snapshot_resume_20261109_172915/encoded/full_domains.json",
   "rows": 12540479,
   "columns": [
     "record_type",

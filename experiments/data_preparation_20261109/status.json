@@ -1,7 +1,7 @@
 {
   "status": "COMPLETE",
   "started": 1794232609.0955632,
-  "snapshot": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915",
+  "snapshot": "<SERVER_ROOT>/data/snapshot_resume_20261109_172915",
   "phase": "done",
   "validated_rows": 12540479,
   "active_scale": "full",

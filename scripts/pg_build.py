@@ -1,6 +1,6 @@
 import json,subprocess,time,tarfile,os
 from pathlib import Path
-r=Path('/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/pg_supplement_20261110');r.mkdir(exist_ok=True)
+r=(Path(__file__).resolve().parents[1]/'experiments/pg_supplement_20261110');r.mkdir(exist_ok=True)
 history=r/'build_attempts';history.mkdir(exist_ok=True)
 for fn in ['build_status.json','configure.log','make.log','install.log']:
  p=r/fn

@@ -5,8 +5,8 @@
   "source": "https://data.ny.gov/resource/w4pv-hbkt.json",
   "scale": "1000000",
   "rows": 1000000,
-  "table_path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/encoded/1000000.npy",
-  "domains_path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/encoded/1000000_domains.json",
+  "table_path": "<SERVER_ROOT>/data/snapshot_resume_20261109_172915/encoded/1000000.npy",
+  "domains_path": "<SERVER_ROOT>/data/snapshot_resume_20261109_172915/encoded/1000000_domains.json",
   "columns": [
     "record_type",
     "registration_class",

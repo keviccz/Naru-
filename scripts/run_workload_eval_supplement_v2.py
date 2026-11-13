@@ -1,6 +1,6 @@
 import os,json,subprocess,time,traceback,shutil
 from pathlib import Path
-r=Path('/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109');out=r/'experiments/workload_eval_supplement_v2_20261110';out.mkdir(exist_ok=False)
+r=Path(__file__).resolve().parents[1];out=r/'experiments/workload_eval_supplement_v2_20261110';out.mkdir(exist_ok=False)
 state={'status':'WAITING_PREREQUISITES','runs':[],'workloads':['scale_shared','predicate_sweep','stress_v2'],'checkpoint_cells':27,'samples':2000,'mc_seed':0}
 def save():
  p=out/'status.tmp';p.write_text(json.dumps(state,indent=2));p.replace(out/'status.json')

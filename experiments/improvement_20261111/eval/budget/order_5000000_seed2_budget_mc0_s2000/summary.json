@@ -60,8 +60,8 @@
       "qerror_positive_max": 4.974122427493102
     }
   },
-  "source_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/eval/main_native/order_5000000_seed2_main_native_mc0_s2000",
-  "source_csv": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/eval/main_native/order_5000000_seed2_main_native_mc0_s2000/per_query.csv",
+  "source_dir": "<SERVER_ROOT>/experiments/improvement_20261111/eval/main_native/order_5000000_seed2_main_native_mc0_s2000",
+  "source_csv": "<SERVER_ROOT>/experiments/improvement_20261111/eval/main_native/order_5000000_seed2_main_native_mc0_s2000/per_query.csv",
   "source_method": "own_resmade_order",
   "alias_of": "order_5000000_seed2_main_native_mc0_s2000",
   "reused_from_baseline": false

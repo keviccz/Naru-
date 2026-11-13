@@ -4,163 +4,163 @@
   "runs": [
     {
       "name": "1000000_own_resmade_seed0",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/1000000_own_resmade_seed0",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/1000000_own_resmade_seed0",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "1000000_own_made_seed0",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/1000000_own_made_seed0",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/1000000_own_made_seed0",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "1000000_official_resmade_seed0",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/1000000_official_resmade_seed0",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/1000000_official_resmade_seed0",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "1000000_own_resmade_seed1",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/1000000_own_resmade_seed1",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/1000000_own_resmade_seed1",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "1000000_own_made_seed1",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/1000000_own_made_seed1",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/1000000_own_made_seed1",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "1000000_official_resmade_seed1",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/1000000_official_resmade_seed1",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/1000000_official_resmade_seed1",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "1000000_own_resmade_seed2",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/1000000_own_resmade_seed2",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/1000000_own_resmade_seed2",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "1000000_own_made_seed2",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/1000000_own_made_seed2",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/1000000_own_made_seed2",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "1000000_official_resmade_seed2",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/1000000_official_resmade_seed2",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/1000000_official_resmade_seed2",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "5000000_own_resmade_seed0",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/5000000_own_resmade_seed0",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/5000000_own_resmade_seed0",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "5000000_own_made_seed0",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/5000000_own_made_seed0",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/5000000_own_made_seed0",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "5000000_official_resmade_seed0",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/5000000_official_resmade_seed0",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/5000000_official_resmade_seed0",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "5000000_own_resmade_seed1",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/5000000_own_resmade_seed1",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/5000000_own_resmade_seed1",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "5000000_own_made_seed1",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/5000000_own_made_seed1",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/5000000_own_made_seed1",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "5000000_official_resmade_seed1",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/5000000_official_resmade_seed1",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/5000000_official_resmade_seed1",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "5000000_own_resmade_seed2",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/5000000_own_resmade_seed2",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/5000000_own_resmade_seed2",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "5000000_own_made_seed2",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/5000000_own_made_seed2",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/5000000_own_made_seed2",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "5000000_official_resmade_seed2",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/5000000_official_resmade_seed2",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/5000000_official_resmade_seed2",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "full_own_resmade_seed0",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/full_own_resmade_seed0",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/full_own_resmade_seed0",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "full_own_made_seed0",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/full_own_made_seed0",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/full_own_made_seed0",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "full_official_resmade_seed0",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/full_official_resmade_seed0",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/full_official_resmade_seed0",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "full_own_resmade_seed1",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/full_own_resmade_seed1",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/full_own_resmade_seed1",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "full_own_made_seed1",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/full_own_made_seed1",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/full_own_made_seed1",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "full_official_resmade_seed1",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/full_official_resmade_seed1",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/full_official_resmade_seed1",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "full_own_resmade_seed2",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/full_own_resmade_seed2",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/full_own_resmade_seed2",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "full_own_made_seed2",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/full_own_made_seed2",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/full_own_made_seed2",
       "status": "COMPLETE",
       "exit_code": 0
     },
     {
       "name": "full_official_resmade_seed2",
-      "path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_evaluation_20261110/full_official_resmade_seed2",
+      "path": "<SERVER_ROOT>/experiments/main_evaluation_20261110/full_official_resmade_seed2",
       "status": "COMPLETE",
       "exit_code": 0
     }

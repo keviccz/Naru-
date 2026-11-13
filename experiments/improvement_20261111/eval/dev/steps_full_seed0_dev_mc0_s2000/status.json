@@ -1,8 +1,8 @@
 {
   "status": "COMPLETE",
   "evaluation_performed": false,
-  "source_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/eval_baseline/dev/B_full_seed0_dev",
-  "source_csv": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/eval_baseline/dev/B_full_seed0_dev/per_query.csv",
+  "source_dir": "<SERVER_ROOT>/experiments/improvement_20261111/eval_baseline/dev/B_full_seed0_dev",
+  "source_csv": "<SERVER_ROOT>/experiments/improvement_20261111/eval_baseline/dev/B_full_seed0_dev/per_query.csv",
   "source_method": "own_resmade",
   "alias_of": null,
   "queries_completed": 200,

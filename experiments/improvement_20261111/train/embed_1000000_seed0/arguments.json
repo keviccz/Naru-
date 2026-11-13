@@ -1,10 +1,10 @@
 {
   "purpose": "benchmark",
-  "encoded_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/encoded",
+  "encoded_dir": "<SERVER_ROOT>/data/snapshot_resume_20261109_172915/encoded",
   "scale": "1000000",
   "variant": "embed",
   "seed": 0,
-  "run_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/train/embed_1000000_seed0",
+  "run_dir": "<SERVER_ROOT>/experiments/improvement_20261111/train/embed_1000000_seed0",
   "order_file": null,
   "max_steps": 9780,
   "batch": 2048,

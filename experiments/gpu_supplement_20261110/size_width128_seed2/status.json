@@ -2,9 +2,9 @@
   "status": "COMPLETE",
   "queries_completed": 2000,
   "arguments": {
-    "run": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/size_supplement_20261110/width128_seed2",
-    "queries": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/workloads/1000000/main_native.jsonl",
-    "output": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/size_width128_seed2",
+    "run": "<SERVER_ROOT>/experiments/size_supplement_20261110/width128_seed2",
+    "queries": "<SERVER_ROOT>/data/snapshot_resume_20261109_172915/workloads/1000000/main_native.jsonl",
+    "output": "<SERVER_ROOT>/experiments/gpu_supplement_20261110/size_width128_seed2",
     "samples": 2000,
     "sample_rows": 10000,
     "scope": "main_native",

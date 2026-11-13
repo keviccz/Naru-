@@ -2,9 +2,9 @@
   "status": "COMPLETE",
   "queries_completed": 300,
   "arguments": {
-    "run": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_matrix_20261109/full_own_made_seed1",
-    "queries": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/workload_supplement_v2_20261110/full/stress_v2.jsonl",
-    "output": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/workload_eval_supplement_v2_20261110/full_own_made_seed1_stress_v2",
+    "run": "<SERVER_ROOT>/experiments/main_matrix_20261109/full_own_made_seed1",
+    "queries": "<SERVER_ROOT>/experiments/workload_supplement_v2_20261110/full/stress_v2.jsonl",
+    "output": "<SERVER_ROOT>/experiments/workload_eval_supplement_v2_20261110/full_own_made_seed1_stress_v2",
     "samples": 2000,
     "sample_rows": 10000,
     "scope": "stress_v2",

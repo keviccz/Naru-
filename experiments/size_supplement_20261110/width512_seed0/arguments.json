@@ -1,6 +1,6 @@
 {
   "purpose": "benchmark",
-  "encoded_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/encoded",
+  "encoded_dir": "<SERVER_ROOT>/data/snapshot_resume_20261109_172915/encoded",
   "scale": "1000000",
   "model": "own_resmade",
   "seed": 0,
@@ -11,5 +11,5 @@
   "warmups": 8000,
   "log_every": 100,
   "threads": 4,
-  "run_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/size_supplement_20261110/width512_seed0"
+  "run_dir": "<SERVER_ROOT>/experiments/size_supplement_20261110/width512_seed0"
 }

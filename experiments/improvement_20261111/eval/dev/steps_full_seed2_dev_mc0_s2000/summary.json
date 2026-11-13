@@ -60,8 +60,8 @@
       "qerror_positive_max": 2.270155888471639
     }
   },
-  "source_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/eval_baseline/dev/B_full_seed2_dev",
-  "source_csv": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/eval_baseline/dev/B_full_seed2_dev/per_query.csv",
+  "source_dir": "<SERVER_ROOT>/experiments/improvement_20261111/eval_baseline/dev/B_full_seed2_dev",
+  "source_csv": "<SERVER_ROOT>/experiments/improvement_20261111/eval_baseline/dev/B_full_seed2_dev/per_query.csv",
   "source_method": "own_resmade",
   "alias_of": null,
   "reused_from_baseline": true

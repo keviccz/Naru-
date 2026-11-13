@@ -41,6 +41,6 @@ q_error 对真值零的行留空；q_error_floor1 对估计和真值分别下限
 
 PostgreSQL17.6从官方源码项目内构建；缺少的bison/flex以及nss_wrapper仅解包到项目内。共享系统和Python没有安装改动。编译使用4线程，SQL禁用并行和JIT。
 挂载根为UID763494/0700，该UID没有系统passwd记录；通过项目私有nss_wrapper映射为naru_pg，setpriv以该非root UID启动。只使用项目私有Unix socket，不监听TCP。连接身份、配置和停服记录见server_identity.json / server_config.txt / shutdown.log。
-脚本在 ../../scripts/pg_*，远程根为 `/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/pg_supplement_20261110`。失败回执和日志保留；早期失败均发生在正式统计评估前，成功结果未被替换。源码来源见source_metadata.json，详细方法和计量边界见README.md。
+脚本在 ../../scripts/pg_*，远程根为 `<SERVER_ROOT>/experiments/pg_supplement_20261110`。失败回执和日志保留；早期失败均发生在正式统计评估前，成功结果未被替换。源码来源见source_metadata.json，详细方法和计量边界见README.md。
 
 本交接只完成后端实验与证据整理；图表和report由后续Agent接手。

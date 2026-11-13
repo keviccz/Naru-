@@ -1,7 +1,7 @@
 {
   "status": "COMPLETE",
-  "source_v1": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/workload_supplement_20261110",
-  "snapshot": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915",
+  "source_v1": "<SERVER_ROOT>/experiments/workload_supplement_20261110",
+  "snapshot": "<SERVER_ROOT>/data/snapshot_resume_20261109_172915",
   "preserve_v1": true,
   "reason": "v1 column index j%2 and operator j%2 were coupled, covering fuel_type IS NULL and color IS NOT NULL only",
   "repair": "enumerate product of nullable columns and both NULL operators first, then cycle 25 times per pair",

@@ -1,7 +1,7 @@
 import csv,json,sqlite3
 from pathlib import Path
 import numpy as np
-root=Path('/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109');s=root/'data/snapshot_resume_20261109_172915'
+root=Path(__file__).resolve().parents[1];s=root/'data/snapshot_resume_20261109_172915'
 spec=json.loads((s/'encoded/full_domains.json').read_text());d=spec['domains'];a=np.load(s/'encoded/full.npy',mmap_mode='r')
 with (s/'dmv.csv').open(newline='') as f:
  reader=csv.reader(f);assert next(reader)==spec['columns']

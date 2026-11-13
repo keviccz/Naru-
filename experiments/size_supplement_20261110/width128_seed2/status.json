@@ -8,7 +8,7 @@
   "epochs_requested": 20,
   "epochs_completed": 20,
   "steps_completed": 9780,
-  "run_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/size_supplement_20261110/width128_seed2",
+  "run_dir": "<SERVER_ROOT>/experiments/size_supplement_20261110/width128_seed2",
   "checkpoint_policy": "rolling checkpoint.pt after each completed epoch",
   "phase": "done",
   "updated_at": "2026-11-10T14:13:22.585613+00:00",

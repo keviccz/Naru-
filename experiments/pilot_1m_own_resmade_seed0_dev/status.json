@@ -2,9 +2,9 @@
   "status": "COMPLETE",
   "queries_completed": 200,
   "arguments": {
-    "run": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/pilot_1m_own_resmade_seed0",
-    "queries": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/workloads/1000000/dev.jsonl",
-    "output": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/pilot_1m_own_resmade_seed0_dev",
+    "run": "<SERVER_ROOT>/experiments/pilot_1m_own_resmade_seed0",
+    "queries": "<SERVER_ROOT>/data/snapshot_resume_20261109_172915/workloads/1000000/dev.jsonl",
+    "output": "<SERVER_ROOT>/experiments/pilot_1m_own_resmade_seed0_dev",
     "samples": 2000,
     "sample_rows": 10000
   },

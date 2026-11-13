@@ -348,7 +348,7 @@
   ],
   "rule": "first highest sum of MI with all other columns; next highest sum with selected columns; exact ties lower original index",
   "null_policy": "NULL participates as its encoded ordinary category",
-  "data_path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/encoded/5000000.npy",
+  "data_path": "<SERVER_ROOT>/data/snapshot_resume_20261109_172915/encoded/5000000.npy",
   "queries_read": false,
   "seconds": 3.345398262143135
 }

@@ -2,10 +2,10 @@
   "status": "COMPLETE",
   "queries_completed": 300,
   "arguments": {
-    "run": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/train/order_1000000_seed1",
-    "queries": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/workload_supplement_v2_20261110/1000000/stress_v2.jsonl",
+    "run": "<SERVER_ROOT>/experiments/improvement_20261111/train/order_1000000_seed1",
+    "queries": "<SERVER_ROOT>/experiments/workload_supplement_v2_20261110/1000000/stress_v2.jsonl",
     "scope": "stress_v2",
-    "output": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/eval/stress_v2/order_1000000_seed1_stress_v2_mc0_s2000",
+    "output": "<SERVER_ROOT>/experiments/improvement_20261111/eval/stress_v2/order_1000000_seed1_stress_v2_mc0_s2000",
     "samples": 2000,
     "mc_seed": 0,
     "method": null,

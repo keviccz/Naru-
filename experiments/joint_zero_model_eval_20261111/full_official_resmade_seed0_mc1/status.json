@@ -2,9 +2,9 @@
   "status": "COMPLETE",
   "queries_completed": 200,
   "arguments": {
-    "run": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_matrix_20261109/full_official_resmade_seed0",
-    "queries": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_20261111/workloads/full/joint_zero_nearzero.jsonl",
-    "output": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_model_eval_20261111/full_official_resmade_seed0_mc1",
+    "run": "<SERVER_ROOT>/experiments/main_matrix_20261109/full_official_resmade_seed0",
+    "queries": "<SERVER_ROOT>/experiments/joint_zero_20261111/workloads/full/joint_zero_nearzero.jsonl",
+    "output": "<SERVER_ROOT>/experiments/joint_zero_model_eval_20261111/full_official_resmade_seed0_mc1",
     "samples": 2000,
     "sample_rows": 10000,
     "scope": "joint_zero_nearzero",

@@ -8,7 +8,7 @@ from collections import Counter
 from pathlib import Path
 os.environ.update(OMP_NUM_THREADS='2',OPENBLAS_NUM_THREADS='2',MKL_NUM_THREADS='2')
 import numpy as np
-ROOT=Path('/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109')
+ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'experiments/joint_zero_20261111';SNAP=ROOT/'data/snapshot_resume_20261109_172915'
 PG=ROOT/'experiments/pg_supplement_20261110';BIN=PG/'install/bin';CLUSTER=PG/'runtime/cluster';SOCKET=PG/'s'
 OUT.mkdir(exist_ok=False);(OUT/'workloads').mkdir();(OUT/'cpu').mkdir();(OUT/'pg').mkdir()

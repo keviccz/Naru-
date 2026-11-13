@@ -1,8 +1,8 @@
 {
   "status": "COMPLETE",
   "evaluation_performed": false,
-  "source_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/eval/main_native/all_1000000_seed1_main_native_mc0_s2000",
-  "source_csv": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/eval/main_native/all_1000000_seed1_main_native_mc0_s2000/per_query.csv",
+  "source_dir": "<SERVER_ROOT>/experiments/improvement_20261111/eval/main_native/all_1000000_seed1_main_native_mc0_s2000",
+  "source_csv": "<SERVER_ROOT>/experiments/improvement_20261111/eval/main_native/all_1000000_seed1_main_native_mc0_s2000/per_query.csv",
   "source_method": "own_resmade_all",
   "alias_of": "all_1000000_seed1_main_native_mc0_s2000",
   "queries_completed": 2000,

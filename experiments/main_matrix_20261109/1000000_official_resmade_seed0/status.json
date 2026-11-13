@@ -8,7 +8,7 @@
   "epochs_requested": 20,
   "epochs_completed": 20,
   "steps_completed": 9780,
-  "run_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_matrix_20261109/1000000_official_resmade_seed0",
+  "run_dir": "<SERVER_ROOT>/experiments/main_matrix_20261109/1000000_official_resmade_seed0",
   "checkpoint_policy": "rolling checkpoint.pt after each completed epoch",
   "phase": "done",
   "updated_at": "2026-11-09T15:19:19.121062+00:00",

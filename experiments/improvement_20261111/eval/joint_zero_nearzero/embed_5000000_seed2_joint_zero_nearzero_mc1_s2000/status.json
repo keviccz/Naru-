@@ -2,10 +2,10 @@
   "status": "COMPLETE",
   "queries_completed": 200,
   "arguments": {
-    "run": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/train/embed_5000000_seed2",
-    "queries": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_20261111/workloads/5000000/joint_zero_nearzero.jsonl",
+    "run": "<SERVER_ROOT>/experiments/improvement_20261111/train/embed_5000000_seed2",
+    "queries": "<SERVER_ROOT>/experiments/joint_zero_20261111/workloads/5000000/joint_zero_nearzero.jsonl",
     "scope": "joint_zero_nearzero",
-    "output": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/eval/joint_zero_nearzero/embed_5000000_seed2_joint_zero_nearzero_mc1_s2000",
+    "output": "<SERVER_ROOT>/experiments/improvement_20261111/eval/joint_zero_nearzero/embed_5000000_seed2_joint_zero_nearzero_mc1_s2000",
     "samples": 2000,
     "mc_seed": 1,
     "method": null,

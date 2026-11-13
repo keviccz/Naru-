@@ -1,6 +1,6 @@
 import os,json,subprocess,time,traceback,shutil
 from pathlib import Path
-r=Path('/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109');out=r/'experiments/gpu_supplement_20261110';out.mkdir(exist_ok=False)
+r=Path(__file__).resolve().parents[1];out=r/'experiments/gpu_supplement_20261110';out.mkdir(exist_ok=False)
 state={'status':'WAITING_SIZE','runs':[],'budget_grid':{'scales':['1000000','5000000','full'],'training_seeds':[0,1,2],'mc_seeds':[0,1,2],'samples':[100,500,2000,8000],'model':'own_resmade'}}
 def save():
  p=out/'status.tmp';p.write_text(json.dumps(state,indent=2));p.replace(out/'status.json')

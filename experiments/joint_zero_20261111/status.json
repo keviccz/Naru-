@@ -509,7 +509,7 @@
   "active_pg": "full_PG-extstats_repeat3",
   "active_cpu": "full_matched_own_resmade_seed2",
   "ended_server_unix": 1794394363.2892923,
-  "serialization_failure_preserved": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/joint_zero_20261111/failure_cpu_serialization_1",
+  "serialization_failure_preserved": "<SERVER_ROOT>/experiments/joint_zero_20261111/failure_cpu_serialization_1",
   "resume_started_server_unix": 1794394343.6904418,
   "cpu_resume_only": true
 }

@@ -1,6 +1,6 @@
 import os,json,subprocess,shutil,time,traceback
 from pathlib import Path
-r=Path('/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109');out=r/'experiments/size_supplement_20261110';out.mkdir(exist_ok=False)
+r=Path(__file__).resolve().parents[1];out=r/'experiments/size_supplement_20261110';out.mkdir(exist_ok=False)
 state={'status':'RUNNING','runs':[],'fixed_widths':[128,512],'reference_width':256,'seeds':[0,1,2]}
 def save():(out/'status.json').write_text(json.dumps(state,indent=2))
 save()

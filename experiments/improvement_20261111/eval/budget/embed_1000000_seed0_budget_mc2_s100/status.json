@@ -2,10 +2,10 @@
   "status": "COMPLETE",
   "queries_completed": 2000,
   "arguments": {
-    "run": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/train/embed_1000000_seed0",
-    "queries": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/workloads/1000000/main_native.jsonl",
+    "run": "<SERVER_ROOT>/experiments/improvement_20261111/train/embed_1000000_seed0",
+    "queries": "<SERVER_ROOT>/data/snapshot_resume_20261109_172915/workloads/1000000/main_native.jsonl",
     "scope": "main_native",
-    "output": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/eval/budget/embed_1000000_seed0_budget_mc2_s100",
+    "output": "<SERVER_ROOT>/experiments/improvement_20261111/eval/budget/embed_1000000_seed0_budget_mc2_s100",
     "samples": 100,
     "mc_seed": 2,
     "method": null,

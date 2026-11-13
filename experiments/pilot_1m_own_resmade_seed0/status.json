@@ -8,7 +8,7 @@
   "epochs_requested": 20,
   "epochs_completed": 20,
   "steps_completed": 9780,
-  "run_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/pilot_1m_own_resmade_seed0",
+  "run_dir": "<SERVER_ROOT>/experiments/pilot_1m_own_resmade_seed0",
   "checkpoint_policy": "rolling checkpoint.pt after each completed epoch",
   "phase": "done",
   "updated_at": "2026-11-09T14:01:48.090477+00:00",

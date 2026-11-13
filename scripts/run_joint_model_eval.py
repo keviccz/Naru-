@@ -1,7 +1,7 @@
 """Frozen-checkpoint GPU0 evaluation for paired joint-zero/near-positive tests."""
 import json,os,shutil,subprocess,time,traceback
 from pathlib import Path
-r=Path('/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109');out=r/'experiments/joint_zero_model_eval_20261111';out.mkdir(exist_ok=False)
+r=Path(__file__).resolve().parents[1];out=r/'experiments/joint_zero_model_eval_20261111';out.mkdir(exist_ok=False)
 state={'status':'WAITING_WORKLOAD','runs':[],'scope':'joint_zero_nearzero','samples':2000,'mc_seeds':[0,1,2],'scales':['1000000','5000000','full'],'models':['own_made','own_resmade','official_resmade'],'training_seeds':[0,1,2],'expected_cells':81,'expected_queries_per_cell':200,'training_performed':False}
 code=out/'code'
 for rel in ['src/models.py','src/baselines.py','vendor/naru/made.py','scripts/evaluate_supplement.py']:

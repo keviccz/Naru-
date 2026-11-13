@@ -1,7 +1,7 @@
 import csv,json,subprocess
 from pathlib import Path
 import numpy as np
-root=Path('/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109');p=root/'data/synthetic_encoding_check';p.mkdir(parents=True,exist_ok=False)
+root=Path(__file__).resolve().parents[1];p=root/'data/synthetic_encoding_check';p.mkdir(parents=True,exist_ok=False)
 cols=['state','reg_valid_date','flag'];rows=[['NA','2026-01-02T00:00:00.000',''],['__NARU_NULL__','__NARU_NULL__','Y'],['NY','2025-12-31T00:00:00.000','N']]*10
 with (p/'dmv.csv').open('w',newline='') as f:
  w=csv.writer(f);w.writerow(cols);w.writerows(rows)

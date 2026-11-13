@@ -1,10 +1,10 @@
 {
   "purpose": "benchmark",
-  "encoded_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/encoded",
+  "encoded_dir": "<SERVER_ROOT>/data/snapshot_resume_20261109_172915/encoded",
   "scale": "1000000",
   "variant": "steps",
   "seed": 2,
-  "run_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/train/steps_1000000_seed2",
+  "run_dir": "<SERVER_ROOT>/experiments/improvement_20261111/train/steps_1000000_seed2",
   "order_file": null,
   "max_steps": 122480,
   "batch": 2048,
@@ -14,8 +14,8 @@
   "threads": 4,
   "log_every": 100,
   "model": "own_resmade",
-  "data_path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/encoded/1000000.npy",
-  "domain_path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/encoded/1000000_domains.json",
+  "data_path": "<SERVER_ROOT>/data/snapshot_resume_20261109_172915/encoded/1000000.npy",
+  "domain_path": "<SERVER_ROOT>/data/snapshot_resume_20261109_172915/encoded/1000000_domains.json",
   "rows": 1000000,
   "original_columns": [
     "record_type",

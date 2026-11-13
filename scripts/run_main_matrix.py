@@ -1,7 +1,7 @@
 """Frozen 27-cell training matrix; sequential GPU0, no tuning or automatic retry."""
 import json,os,subprocess,shutil,time,traceback
 from pathlib import Path
-ROOT=Path('/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109')
+ROOT=Path(__file__).resolve().parents[1]
 snapshot=ROOT/'data/snapshot_resume_20261109_172915'
 queue=ROOT/'experiments/main_matrix_20261109';queue.mkdir(exist_ok=False)
 state={'status':'PREPARING','started':time.time(),'runs':[],'gpu':0,'evaluation_status':'NOT_RUN','policy':'fixed 20 epochs; seeds 0/1/2; no retries or best-seed selection'}

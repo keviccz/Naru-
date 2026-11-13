@@ -4,7 +4,7 @@ from pathlib import Path
 os.environ.update(OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1',MKL_NUM_THREADS='1')
 import numpy as np
 import pandas as pd
-ROOT=Path('/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109')
+ROOT=Path(__file__).resolve().parents[1]
 R=ROOT/'experiments/pg_supplement_20261110'; SNAP=ROOT/'data/snapshot_resume_20261109_172915'
 BIN=R/'install/bin'; RT=R/'runtime'; SOCKET=R/'s'
 STATE={'status':'RUNNING','started':time.time(),'version':'17.6','scope':'CPU-only; no TCP; no shared install'}

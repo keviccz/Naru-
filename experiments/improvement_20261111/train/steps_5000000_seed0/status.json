@@ -6,7 +6,7 @@
   "variant": "steps",
   "scale": "5000000",
   "seed": 0,
-  "run_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/train/steps_5000000_seed0",
+  "run_dir": "<SERVER_ROOT>/experiments/improvement_20261111/train/steps_5000000_seed0",
   "steps_completed": 122480,
   "epochs_completed": 50,
   "checkpoint_policy": "rolling final-state checkpoint at each reporting window; no optimizer resume",

@@ -2,7 +2,7 @@
   "status": "COMPLETE",
   "started": 1794320383.4058833,
   "version": "17.6",
-  "prefix": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/pg_supplement_20261110/install",
+  "prefix": "<SERVER_ROOT>/experiments/pg_supplement_20261110/install",
   "source": "https://ftp.postgresql.org/pub/source/v17.6/postgresql-17.6.tar.bz2",
   "phase": "install",
   "ended": 1794320399.346599

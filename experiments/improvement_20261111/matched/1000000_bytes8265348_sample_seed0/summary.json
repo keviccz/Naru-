@@ -5,7 +5,7 @@
   "sample_seed": 0,
   "sample_rows": 187848,
   "int32_row_bytes": 44,
-  "source_data_path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/encoded/1000000.npy",
+  "source_data_path": "<SERVER_ROOT>/data/snapshot_resume_20261109_172915/encoded/1000000.npy",
   "shared_variants": [
     "embed",
     "all"

@@ -2,9 +2,9 @@
   "status": "COMPLETE",
   "queries_completed": 1000,
   "arguments": {
-    "run": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_matrix_20261109/full_official_resmade_seed1",
-    "queries": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/workload_supplement_20261110/full/scale_shared.jsonl",
-    "output": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/workload_eval_supplement_v2_20261110/full_official_resmade_seed1_scale_shared",
+    "run": "<SERVER_ROOT>/experiments/main_matrix_20261109/full_official_resmade_seed1",
+    "queries": "<SERVER_ROOT>/experiments/workload_supplement_20261110/full/scale_shared.jsonl",
+    "output": "<SERVER_ROOT>/experiments/workload_eval_supplement_v2_20261110/full_official_resmade_seed1_scale_shared",
     "samples": 2000,
     "sample_rows": 10000,
     "scope": "scale_shared",

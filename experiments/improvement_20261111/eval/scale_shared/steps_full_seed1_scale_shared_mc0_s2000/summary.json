@@ -24,8 +24,8 @@
   "variant": "steps",
   "scale": "full",
   "evaluation_performed": false,
-  "source_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/workload_eval_supplement_v2_20261110/full_own_resmade_seed1_scale_shared",
-  "source_csv": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/workload_eval_supplement_v2_20261110/full_own_resmade_seed1_scale_shared/per_query.csv",
+  "source_dir": "<SERVER_ROOT>/experiments/workload_eval_supplement_v2_20261110/full_own_resmade_seed1_scale_shared",
+  "source_csv": "<SERVER_ROOT>/experiments/workload_eval_supplement_v2_20261110/full_own_resmade_seed1_scale_shared/per_query.csv",
   "source_method": "own_resmade",
   "alias_of": null,
   "reused_from_baseline": true

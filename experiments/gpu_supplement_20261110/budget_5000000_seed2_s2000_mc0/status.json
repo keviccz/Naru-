@@ -2,9 +2,9 @@
   "status": "COMPLETE",
   "queries_completed": 2000,
   "arguments": {
-    "run": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_matrix_20261109/5000000_own_resmade_seed2",
-    "queries": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/workloads/5000000/main_native.jsonl",
-    "output": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_5000000_seed2_s2000_mc0",
+    "run": "<SERVER_ROOT>/experiments/main_matrix_20261109/5000000_own_resmade_seed2",
+    "queries": "<SERVER_ROOT>/data/snapshot_resume_20261109_172915/workloads/5000000/main_native.jsonl",
+    "output": "<SERVER_ROOT>/experiments/gpu_supplement_20261110/budget_5000000_seed2_s2000_mc0",
     "samples": 2000,
     "sample_rows": 10000,
     "scope": "main_native",

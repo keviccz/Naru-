@@ -93,7 +93,7 @@ python tests/check_workload.py
 | Summaries and audits | `scripts/summarize_*.py`, `scripts/audit_*.py`, `scripts/followup_analysis_run.py` |
 | Improvement ablation | `scripts/train_improvement.py`, `scripts/evaluate_improvement.py`, `scripts/run_improvement_matched.py`, `scripts/analyze_improvements.py --experiment-root experiments/improvement_20261111` |
 
-`scripts/run_*.py` are the batch drivers we used on the training server. They contain that server's absolute paths and interpreter location and are kept as a record of how each experiment was launched. Adjust the paths before reusing them.
+`scripts/run_*.py` are the batch drivers we used on the training server, kept as a record of how each experiment was launched. Paths in the scripts are relative to the repository root; the server's interpreter location is left as it was, so adjust it before reusing them. In the experiment records (configs, status files, receipts), the server's project root is written as `<SERVER_ROOT>`.
 
 ## Main settings
 

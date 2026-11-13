@@ -462,7 +462,7 @@
       "checks": 24,
       "failed": [],
       "scope": "independent upstream ProgressiveSampling CPU correctness, not upstream GPU latency, not full historical 1.13 training reproduction",
-      "checkpoint": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_matrix_20261109/1000000_official_resmade_seed0/checkpoint.pt"
+      "checkpoint": "<SERVER_ROOT>/experiments/main_matrix_20261109/1000000_official_resmade_seed0/checkpoint.pt"
     },
     "torch113": {
       "status": "COMPLETE",
@@ -470,7 +470,7 @@
       "checks": 24,
       "failed": [],
       "scope": "independent upstream ProgressiveSampling CPU correctness, not upstream GPU latency, not full historical 1.13 training reproduction",
-      "checkpoint": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/main_matrix_20261109/1000000_official_resmade_seed0/checkpoint.pt"
+      "checkpoint": "<SERVER_ROOT>/experiments/main_matrix_20261109/1000000_official_resmade_seed0/checkpoint.pt"
     }
   },
   "scope": "Same official 1M seed0 checkpoint on CPU in PyTorch2.4.1 and1.13.1, including masked inputs and original upstream inference; no historical full-training equivalence claimed"

@@ -793,11 +793,11 @@
   "gpu_compute_apps": [],
   "active_command": [
     "/opt/conda/envs/R4.2/bin/python",
-    "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/code/scripts/analyze_improvements.py",
+    "<SERVER_ROOT>/experiments/improvement_20261111/code/scripts/analyze_improvements.py",
     "--experiment-root",
-    "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111"
+    "<SERVER_ROOT>/experiments/improvement_20261111"
   ],
-  "active_log": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/queue_logs/analysis.log",
+  "active_log": "<SERVER_ROOT>/experiments/improvement_20261111/queue_logs/analysis.log",
   "last_exit_code": 0,
   "ended_at": "2026-11-12T15:49:22.797223+00:00",
   "completion_recovery": "delivery_recovery_status.json",

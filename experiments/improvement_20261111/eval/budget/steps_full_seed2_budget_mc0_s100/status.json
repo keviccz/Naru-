@@ -1,8 +1,8 @@
 {
   "status": "COMPLETE",
   "evaluation_performed": false,
-  "source_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed2_s100_mc0",
-  "source_csv": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/gpu_supplement_20261110/budget_full_seed2_s100_mc0/per_query.csv",
+  "source_dir": "<SERVER_ROOT>/experiments/gpu_supplement_20261110/budget_full_seed2_s100_mc0",
+  "source_csv": "<SERVER_ROOT>/experiments/gpu_supplement_20261110/budget_full_seed2_s100_mc0/per_query.csv",
   "source_method": "own_resmade",
   "alias_of": null,
   "queries_completed": 2000,
