@@ -6,6 +6,14 @@
 python analysis/make_figures.py   # 需要 matplotlib、numpy、pandas；只读 experiments/ 和 data/
 ```
 
+## 写报告时注意
+
+- 误差条和方括号里的范围是 3 个 seed 的 min–max，不是置信区间，不要写成 95% CI。
+- 自写 ResMADE 并不总比 MADE 好（第 2 节第 3 条），不要写“ResMADE 更强”。
+- 改进实验的收益和变差的地方都要写（第 4 节“负面结果”）。
+- 和论文的数字不能直接比较，数据快照不同（第 5 节）。
+- 代码不用另外打包，报告里放仓库链接 https://github.com/keviccz/Naru- 即可。仓库目前是公开的；课程页面没写必须公开还是只对老师开放，有不同意见提交前提出。
+
 ## 0. 待组员补充
 
 | 项目 | 内容 |
