@@ -1,6 +1,6 @@
 # Naru 复现：结果整理（组内用）
 
-更新：2026-11-13。这份文档给组员写正式报告时参考，不是最终报告。图在 `figures/`（PNG + PDF），每张图实际画出来的数字在 `analysis/tables/<图名>.csv`，脚本是 `analysis/make_figures.py`，一条命令重建：
+更新：2026-11-13。这份文档供组员写正式报告时参考，本身不是报告。图在 `figures/`（PNG + PDF），每张图实际画出来的数字在 `analysis/tables/<图名>.csv`。全部图表由 `analysis/make_figures.py` 生成，一条命令就能重建：
 
 ```bash
 python analysis/make_figures.py   # 需要 matplotlib、numpy、pandas；只读 experiments/ 和 data/
@@ -89,7 +89,7 @@ PG stat 1000（不加扩展统计）和 PG 默认差不多，完整数字见 `an
 
 ![](../figures/fig06_accuracy_vs_cost.png)
 
-**图 7 不同负载下的 p95**：shared 和 predicate sweep 上的结论与主负载一致。stress v2 不一样：它含大量零结果查询，经 max(1,·) 处理后独立假设反而是 1.00；自写 MADE 在 stress v2 上 p95 约 2.4，两种 ResMADE 只有 1.15–1.5。原因已查明（见附录 B），是采样方式造成的，不是实现错误：MADE 没有列遮盖，不能跳过通配列，对 `fuel_type IS NULL` 这条查询偶尔会漏采，估计几乎为 0。去掉这条查询后，MADE 的 p95 是 1.15–1.31，和 ResMADE 持平。stress v2 只有 64 种不同语义，重复查询不独立，所以只作为辅助证据。
+**图 7 不同负载下的 p95**：shared 和 predicate sweep 上的结论与主负载一致。stress v2 不一样：它含大量零结果查询，经 max(1,·) 处理后独立假设反而是 1.00；自写 MADE 在 stress v2 上 p95 约 2.4，两种 ResMADE 只有 1.15–1.5。附录 B 查明了原因：问题出在采样方式，代码实现没有错。MADE 没有列遮盖，不能跳过通配列，对 `fuel_type IS NULL` 这条查询偶尔会漏采，估计几乎为 0。去掉这条查询后，MADE 的 p95 是 1.15–1.31，和 ResMADE 持平。stress v2 只有 64 种不同语义，重复查询不独立，所以只作为辅助证据。
 
 ![](../figures/fig07_workload_robustness.png)
 
@@ -111,7 +111,9 @@ PG stat 1000（不加扩展统计）和 PG 默认差不多，完整数字见 `an
 
 ## 4. 改进实验（已完成，2026-11-12）
 
-只改自写 ResMADE，固定消融：三项改动各单独做一次，再做一次三项全开。每个变体 × 3 个规模 × 3 个训练 seed，共 33 次新训练；steps 在 full 上本来就是 122,480 步，直接复用基线，不重训。原始数据、配置和审计在 `experiments/improvement_20261111/`（`FINAL_ANALYSIS.md` 是 Codex 的完整分析，`analysis/` 下是汇总 CSV），`scripts/analyze_improvements.py` 可以从原始 CSV 重建全部汇总（本地重跑结果为 PASS_COMPLETE，数值与服务器一致）。
+只改自写 ResMADE，做固定消融：三项改动各单独跑一次，再跑一次三项全开。每个变体 × 3 个规模 × 3 个训练 seed，共 33 次新训练；full 上的基线本来就是 122,480 步，所以 steps/full 直接复用基线，没有重训。
+
+原始数据、配置和审计在 `experiments/improvement_20261111/`，其中 `FINAL_ANALYSIS.md` 是完整分析，`analysis/` 下是汇总 CSV。`scripts/analyze_improvements.py` 可以从原始 CSV 重建全部汇总；本地重跑结果为 PASS_COMPLETE，数值与服务器一致。
 
 | 变体 | 改动 |
 |---|---|
@@ -261,4 +263,4 @@ all 在 MC seed 0 下，p95 随每条查询的 progressive samples 100 → 500 �
 
 **影响**：去掉这条查询后，MADE 在 stress v2 上的 p95 分别是 1.31 / 1.21 / 1.15（1M / 5M / 全表），和 ResMADE 一致。主负载的查询都以真实行为锚点，有 5–11 个谓词，前序列大多也被约束，所以不会出现这种情况。
 
-**报告里怎么写**：这正好印证了论文里 wildcard skipping 的作用。可以当作一个“方法局限 + 设计动机”的例子，不需要当成 bug。
+**报告里怎么写**：这个现象说明了论文里 wildcard skipping 的作用，可以作为“方法局限 + 设计动机”的例子来写，不必当成 bug。
