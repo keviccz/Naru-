@@ -1,0 +1,98 @@
+{
+  "id": "full_bytes10168204_sample_seed2",
+  "scale": "full",
+  "parameter_budget_bytes": 10168204,
+  "sample_seed": 2,
+  "sample_rows": 231095,
+  "int32_row_bytes": 44,
+  "source_data_path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/encoded/full.npy",
+  "shared_variants": [
+    "embed",
+    "all"
+  ],
+  "reference_train_ids": [
+    "embed_full_seed0",
+    "embed_full_seed1",
+    "embed_full_seed2",
+    "all_full_seed0",
+    "all_full_seed1",
+    "all_full_seed2"
+  ],
+  "status": "COMPLETE",
+  "queries": 2000,
+  "reference_models": [
+    {
+      "train_id": "embed_full_seed0",
+      "variant": "embed",
+      "training_seed": 0,
+      "parameter_bytes": 10168204,
+      "checkpoint_serialized_bytes": 19750803
+    },
+    {
+      "train_id": "embed_full_seed1",
+      "variant": "embed",
+      "training_seed": 1,
+      "parameter_bytes": 10168204,
+      "checkpoint_serialized_bytes": 19750803
+    },
+    {
+      "train_id": "embed_full_seed2",
+      "variant": "embed",
+      "training_seed": 2,
+      "parameter_bytes": 10168204,
+      "checkpoint_serialized_bytes": 19750803
+    },
+    {
+      "train_id": "all_full_seed0",
+      "variant": "all",
+      "training_seed": 0,
+      "parameter_bytes": 10168204,
+      "checkpoint_serialized_bytes": 19750931
+    },
+    {
+      "train_id": "all_full_seed1",
+      "variant": "all",
+      "training_seed": 1,
+      "parameter_bytes": 10168204,
+      "checkpoint_serialized_bytes": 19750931
+    },
+    {
+      "train_id": "all_full_seed2",
+      "variant": "all",
+      "training_seed": 2,
+      "parameter_bytes": 10168204,
+      "checkpoint_serialized_bytes": 19750931
+    }
+  ],
+  "sample_array_bytes": 10168180,
+  "storage_contract": "FP32 trainable parameter bytes versus materialized int32 sample rows; common per-scale dictionaries excluded on both sides; no index",
+  "sample_ids_saved": false,
+  "sampling_policy": "NumPy default_rng(sample_seed).choice(population, sample_rows, replace=False)",
+  "latency_scope": "host masks excluded; CPU exact scan of materialized sample included",
+  "methods": {
+    "uniform_matched_improvement": {
+      "queries": 2000,
+      "positive_truth_queries": 2000,
+      "zero_truth_queries": 0,
+      "qerror_definition": "floor1; positive-only metrics reported separately",
+      "qerror_median": 1.014123129302201,
+      "qerror_p95": 1.9558655398469935,
+      "qerror_p99": 37.02999999999997,
+      "qerror_max": 121.0,
+      "qerror_positive_median": 1.014123129302201,
+      "qerror_positive_p95": 1.9558655398469935,
+      "qerror_positive_p99": 37.02999999999997,
+      "qerror_positive_max": 121.0,
+      "latency_median_ms": 8.027840405702591,
+      "latency_p95_ms": 11.044405028223991,
+      "zero_estimate_gt1": 0,
+      "zero_estimate_gt10": 0,
+      "zero_estimate_gt100": 0,
+      "positive_estimate_eq0": 74,
+      "positive_estimate_lt1": 74,
+      "zero_estimate_median": null,
+      "zero_estimate_p95": null,
+      "zero_estimate_max": null
+    }
+  }
+}

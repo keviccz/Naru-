@@ -5,7 +5,8 @@ https://www.vldb.org/pvldb/vol13/p279-yang.pdf
 https://github.com/naru-project/naru/blob/master/made.py
 https://github.com/naru-project/naru/blob/master/estimators.py
 
-Natural column order only; binary input, categorical softmax output. NULL is a
+Natural model-column order; binary input by default, with optional embeddings
+for explicitly selected model-column indices. Categorical softmax output. NULL is a
 regular modeled category but cannot satisfy ordinary comparisons. MASK (-1)
 is a different, learned representation. Wildcard skipping is learned approximate
 marginalization; disable it when testing sampling against the full joint model.
@@ -42,7 +43,8 @@ class ResidualBlock(nn.Module):
 
 class CategoricalMADE(nn.Module):
     def __init__(self, domain_sizes, hidden=256, layers=5, residual=False,
-                 direct_io=False, column_masking=False, mask_seed=11123):
+                 direct_io=False, column_masking=False, mask_seed=11123,
+                 embedding_columns=None, embed_size=32):
         super().__init__()
         self.domain_sizes = tuple(int(n) for n in domain_sizes)
         if not self.domain_sizes or min(self.domain_sizes) < 1 or hidden < 1 or layers < 1:
@@ -50,7 +52,22 @@ class CategoricalMADE(nn.Module):
         self.ncols = len(self.domain_sizes)
         self.column_masking = column_masking
         self.residual = residual
-        self.input_widths = tuple(max(1, (n-1).bit_length()) for n in self.domain_sizes)
+        # Indices refer to the data/model order, after any external permutation.
+        # No domain-size policy is applied here: the experiment config freezes it.
+        selected = () if embedding_columns is None else tuple(embedding_columns)
+        if any(not isinstance(i, (int, np.integer)) or isinstance(i, (bool, np.bool_))
+               for i in selected):
+            raise TypeError('embedding column indices must be integers')
+        selected = tuple(int(i) for i in selected)
+        if len(set(selected)) != len(selected) or any(i < 0 or i >= self.ncols for i in selected):
+            raise ValueError('embedding column indices must be unique and in range')
+        if not isinstance(embed_size, (int, np.integer)) or isinstance(embed_size, (bool, np.bool_)) or embed_size < 1:
+            raise ValueError('positive integer embedding width required')
+        self.embedding_columns = tuple(sorted(selected))
+        self.embed_size = int(embed_size)
+        self.input_widths = tuple(self.embed_size if i in self.embedding_columns
+                                  else max(1, (n-1).bit_length())
+                                  for i, n in enumerate(self.domain_sizes))
         inp = np.repeat(np.arange(self.ncols), self.input_widths)
         out = np.repeat(np.arange(self.ncols), self.domain_sizes)
         rng = np.random.RandomState(mask_seed)
@@ -72,7 +89,13 @@ class CategoricalMADE(nn.Module):
         self.direct = MaskedLinear(inp, out, strict=True) if direct_io else None
         self.unknown = nn.ParameterList([nn.Parameter(torch.zeros(w)) for w in self.input_widths]) if column_masking else None
         for i, width in enumerate(self.input_widths):
-            self.register_buffer('bits_%d' % i, 1 << torch.arange(width))
+            if i not in self.embedding_columns:
+                self.register_buffer('bits_%d' % i, 1 << torch.arange(width))
+        # Keep the historical binary construction and RNG stream untouched.
+        # As with Linear, the trainer owns experiment-specific initialization;
+        # its initialization pass sets embedding weights to normal(std=0.02).
+        self.embeddings = nn.ModuleDict({str(i): nn.Embedding(self.domain_sizes[i], self.embed_size)
+                                         for i in self.embedding_columns}) if self.embedding_columns else None
 
     def encode(self, x):
         """Encode validated codes; call validate_codes once per loaded batch/table.
@@ -87,7 +110,10 @@ class CategoricalMADE(nn.Module):
         blocks = []
         for i, width in enumerate(self.input_widths):
             value = x[:, i:i+1].long()
-            bits = ((value.clamp_min(0) & getattr(self, 'bits_%d' % i)) != 0).to(self.input_layer.weight.dtype)
+            if i in self.embedding_columns:
+                bits = self.embeddings[str(i)](value[:, 0].clamp_min(0))
+            else:
+                bits = ((value.clamp_min(0) & getattr(self, 'bits_%d' % i)) != 0).to(self.input_layer.weight.dtype)
             if self.column_masking:
                 dropped = value < 0
                 if self.training:

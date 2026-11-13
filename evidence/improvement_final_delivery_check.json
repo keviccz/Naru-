@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "local_and_remote_complete_audits_agree": true,
+  "sampling_2000_to_8000_p95_worse_cells_by_variant": {
+    "order": 1,
+    "steps": 0,
+    "embed": 4,
+    "all": 0
+  },
+  "affected_document_links_checked": 65,
+  "formal_new_fits": 33,
+  "logical_eval_cells": 720,
+  "new_model_estimates": 899200,
+  "unique_matched_estimates": 18000,
+  "gpu0_idle_remote_verified": true
+}

@@ -1,0 +1,16 @@
+{
+  "purpose": "benchmark",
+  "encoded_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/encoded",
+  "scale": "full",
+  "variant": "all",
+  "seed": 1,
+  "run_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/train/all_full_seed1",
+  "order_file": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/column_order_full.json",
+  "max_steps": 122480,
+  "batch": 2048,
+  "width": 256,
+  "layers": 5,
+  "warmups": 8000,
+  "threads": 4,
+  "log_every": 100
+}

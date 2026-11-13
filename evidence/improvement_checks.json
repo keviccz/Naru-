@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "created_server_utc": "2026-11-11T16:10:55.166237+00:00",
+  "checks": [
+    {
+      "name": "legacy_and_new_models",
+      "status": "PASS",
+      "receipt": "validation/model_gate_status.json"
+    },
+    {
+      "name": "model_details",
+      "status": "PASS",
+      "receipt": "validation/model_checks.json"
+    },
+    {
+      "name": "training_loop_exact_490",
+      "status": "PASS",
+      "receipt": "validation/training_checks.json"
+    },
+    {
+      "name": "evaluation_and_GPU_mixed_input",
+      "status": "PASS",
+      "receipt": "validation/evaluation_gate_status.json"
+    },
+    {
+      "name": "MI_metadata_and_greedy_1000000",
+      "status": "PASS",
+      "order": [
+        1,
+        4,
+        0,
+        5,
+        7,
+        6,
+        3,
+        2,
+        9,
+        8,
+        10
+      ],
+      "queries_read": false
+    },
+    {
+      "name": "MI_metadata_and_greedy_5000000",
+      "status": "PASS",
+      "order": [
+        1,
+        4,
+        0,
+        5,
+        7,
+        6,
+        3,
+        2,
+        9,
+        8,
+        10
+      ],
+      "queries_read": false
+    },
+    {
+      "name": "MI_metadata_and_greedy_full",
+      "status": "PASS",
+      "order": [
+        1,
+        4,
+        0,
+        5,
+        7,
+        6,
+        3,
+        2,
+        9,
+        8,
+        10
+      ],
+      "queries_read": false
+    }
+  ],
+  "source_equivalence": "model/trainer exact bytes match the remotely checked copies",
+  "formal_training_started": false,
+  "smoke_fits_excluded": 2,
+  "gpu_uuid": "GPU-5bba126a-80d2-a7a3-b5df-c3e8b60589d3"
+}

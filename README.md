@@ -10,7 +10,7 @@ Naru learns the joint distribution of a table with a deep autoregressive model (
 
 | Path | Origin |
 |---|---|
-| `src/models.py` | **Our implementation**: masked autoregressive network (MADE and ResMADE with direct I/O and column masking), binary input encoding, predicate masks, progressive sampling with wildcard skipping |
+| `src/models.py` | **Our implementation**: masked autoregressive network (MADE and ResMADE with direct I/O and column masking), binary input encoding, predicate masks, progressive sampling with wildcard skipping; optional embedding inputs for large-domain columns (`embedding_columns`, used only by the improvement experiments) |
 | `src/baselines.py` | **Ours**: exact-marginal independence estimator and uniform row sampling |
 | `scripts/`, `tests/` | **Ours**: data freezing, encoding, workload generation, exact counts, training, evaluation, PostgreSQL baseline, audits and summaries |
 | `vendor/naru/` | **Upstream code**, [naru-project/naru](https://github.com/naru-project/naru) at commit `264cf4e9c96c9e34422f9eebc455a714aeef0b57`, Apache License 2.0 (see `vendor/naru/LICENSE`). Used only as the "official ResMADE" comparison and as a reference for the optimizer/learning-rate schedule |
@@ -91,6 +91,7 @@ python tests/check_workload.py
 | Evaluate | `scripts/evaluate_matrix_model.py --run ... --queries ... --scope main_native --output ...`, `scripts/evaluate_supplement.py` |
 | PostgreSQL baseline | `scripts/pg_build.py`, `scripts/pg_benchmark.py` |
 | Summaries and audits | `scripts/summarize_*.py`, `scripts/audit_*.py`, `scripts/followup_analysis_run.py` |
+| Improvement ablation | `scripts/train_improvement.py`, `scripts/evaluate_improvement.py`, `scripts/run_improvement_matched.py`, `scripts/analyze_improvements.py --experiment-root experiments/improvement_20261111` |
 
 `scripts/run_*.py` are the batch drivers we used on the training server. They contain that server's absolute paths and interpreter location and are kept as a record of how each experiment was launched. Adjust the paths before reusing them.
 
@@ -120,7 +121,17 @@ All learned models cut the tail error by one to three orders of magnitude relati
 ## Status
 
 - Replication, baselines, PostgreSQL comparison and supplementary experiments: complete.
-- Model improvements (column ordering, matched optimisation budget, embedding inputs for large domains): in progress.
+- Model improvements: complete. Fixed ablation on our ResMADE (mutual-information column order, 122,480 training steps at every scale, 32-dim embedding inputs for columns with domain > 64, and all three combined), 3 scales × 3 training seeds. Main-workload p95, median across seeds:
+
+  | Variant | 1M | 5M | full |
+  |---|---:|---:|---:|
+  | baseline | 1.463 | 1.295 | 1.191 |
+  | column order | 1.465 | 1.288 | 1.195 |
+  | more steps | 1.265 | 1.274 | 1.191 (= baseline) |
+  | embedding | 1.478 | 1.280 | 1.176 |
+  | all three | 1.281 | 1.237 | 1.185 |
+
+  Most of the gain comes from training longer at small scale (the 1M baseline was under-trained). No variant wins on every metric: at full scale, embedding and all-three raise p99 for two of three seeds and worsen the stress workload's positive-query p95 by 7–12%. Details, costs and negative results: `experiments/improvement_20261111/FINAL_ANALYSIS.md` (Chinese) and `docs/RESULTS_zh.md` §4; figures `fig12`–`fig17`.
 - Figures: `figures/` (PNG + PDF), rebuilt by `python analysis/make_figures.py` (matplotlib, numpy, pandas); plotted numbers in `analysis/tables/`. Chinese result notes for the team: `docs/RESULTS_zh.md`.
 
 ## References

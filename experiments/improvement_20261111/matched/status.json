@@ -1,0 +1,24 @@
+{
+  "status": "COMPLETE",
+  "completed_draws": [
+    "1000000_bytes8265348_sample_seed0",
+    "1000000_bytes8265348_sample_seed1",
+    "1000000_bytes8265348_sample_seed2",
+    "5000000_bytes9853880_sample_seed0",
+    "5000000_bytes9853880_sample_seed1",
+    "5000000_bytes9853880_sample_seed2",
+    "full_bytes10168204_sample_seed0",
+    "full_bytes10168204_sample_seed1",
+    "full_bytes10168204_sample_seed2"
+  ],
+  "pending_training": [],
+  "storage_contract": "FP32 trainable parameter bytes versus materialized int32 sample rows; common per-scale dictionaries excluded on both sides; no index",
+  "sample_seeds": [
+    0,
+    1,
+    2
+  ],
+  "GPU_used": false,
+  "active_draw": null,
+  "exit_code": 0
+}

@@ -1,0 +1,50 @@
+{
+  "status": "COMPLETE",
+  "queries_completed": 1100,
+  "arguments": {
+    "run": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/train/embed_1000000_seed1",
+    "queries": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/workload_supplement_20261110/1000000/predicate_sweep.jsonl",
+    "scope": "predicate_sweep",
+    "output": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/eval/predicate_sweep/embed_1000000_seed1_predicate_sweep_mc0_s2000",
+    "samples": 2000,
+    "mc_seed": 0,
+    "method": null,
+    "threads": 4
+  },
+  "evaluation_performed": true,
+  "gpu_uuid": "GPU-5bba126a-80d2-a7a3-b5df-c3e8b60589d3",
+  "physical_gpu_index": 0,
+  "method": "own_resmade_embed",
+  "column_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "inverse_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "embedding_columns": [
+    6,
+    7
+  ],
+  "parameter_bytes": 8265348,
+  "exit_code": 0
+}

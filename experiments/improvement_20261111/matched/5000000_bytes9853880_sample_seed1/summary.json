@@ -1,0 +1,98 @@
+{
+  "id": "5000000_bytes9853880_sample_seed1",
+  "scale": "5000000",
+  "parameter_budget_bytes": 9853880,
+  "sample_seed": 1,
+  "sample_rows": 223951,
+  "int32_row_bytes": 44,
+  "source_data_path": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/data/snapshot_resume_20261109_172915/encoded/5000000.npy",
+  "shared_variants": [
+    "embed",
+    "all"
+  ],
+  "reference_train_ids": [
+    "embed_5000000_seed0",
+    "embed_5000000_seed1",
+    "embed_5000000_seed2",
+    "all_5000000_seed0",
+    "all_5000000_seed1",
+    "all_5000000_seed2"
+  ],
+  "status": "COMPLETE",
+  "queries": 2000,
+  "reference_models": [
+    {
+      "train_id": "embed_5000000_seed0",
+      "variant": "embed",
+      "training_seed": 0,
+      "parameter_bytes": 9853880,
+      "checkpoint_serialized_bytes": 19146515
+    },
+    {
+      "train_id": "embed_5000000_seed1",
+      "variant": "embed",
+      "training_seed": 1,
+      "parameter_bytes": 9853880,
+      "checkpoint_serialized_bytes": 19146515
+    },
+    {
+      "train_id": "embed_5000000_seed2",
+      "variant": "embed",
+      "training_seed": 2,
+      "parameter_bytes": 9853880,
+      "checkpoint_serialized_bytes": 19146515
+    },
+    {
+      "train_id": "all_5000000_seed0",
+      "variant": "all",
+      "training_seed": 0,
+      "parameter_bytes": 9853880,
+      "checkpoint_serialized_bytes": 19146643
+    },
+    {
+      "train_id": "all_5000000_seed1",
+      "variant": "all",
+      "training_seed": 1,
+      "parameter_bytes": 9853880,
+      "checkpoint_serialized_bytes": 19146643
+    },
+    {
+      "train_id": "all_5000000_seed2",
+      "variant": "all",
+      "training_seed": 2,
+      "parameter_bytes": 9853880,
+      "checkpoint_serialized_bytes": 19146643
+    }
+  ],
+  "sample_array_bytes": 9853844,
+  "storage_contract": "FP32 trainable parameter bytes versus materialized int32 sample rows; common per-scale dictionaries excluded on both sides; no index",
+  "sample_ids_saved": false,
+  "sampling_policy": "NumPy default_rng(sample_seed).choice(population, sample_rows, replace=False)",
+  "latency_scope": "host masks excluded; CPU exact scan of materialized sample included",
+  "methods": {
+    "uniform_matched_improvement": {
+      "queries": 2000,
+      "positive_truth_queries": 2000,
+      "zero_truth_queries": 0,
+      "qerror_definition": "floor1; positive-only metrics reported separately",
+      "qerror_median": 1.01225852,
+      "qerror_p95": 2.039899708731522,
+      "qerror_p99": 17.019999999999982,
+      "qerror_max": 74.0,
+      "qerror_positive_median": 1.01225852,
+      "qerror_positive_p95": 2.039899708731522,
+      "qerror_positive_p99": 17.019999999999982,
+      "qerror_positive_max": 74.0,
+      "latency_median_ms": 7.653377950191498,
+      "latency_p95_ms": 10.521571710705757,
+      "zero_estimate_gt1": 0,
+      "zero_estimate_gt10": 0,
+      "zero_estimate_gt100": 0,
+      "positive_estimate_eq0": 99,
+      "positive_estimate_lt1": 99,
+      "zero_estimate_median": null,
+      "zero_estimate_p95": null,
+      "zero_estimate_max": null
+    }
+  }
+}

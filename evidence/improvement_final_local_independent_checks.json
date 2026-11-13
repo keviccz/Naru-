@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "all_36_training_metadata_and_720_curve_records_checked": true,
+  "all_33_new_embedding_coordinate_mappings_checked": true,
+  "matched_unique_draws": 9,
+  "matched_raw_rows_rechecked": 18000,
+  "full_checkpoints_remote_only": true
+}

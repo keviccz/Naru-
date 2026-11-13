@@ -1,0 +1,63 @@
+{
+  "status": "COMPLETE",
+  "queries": 200,
+  "method": "own_resmade_steps",
+  "scope": "joint_zero_nearzero",
+  "variant": "steps",
+  "scale": "5000000",
+  "training_seed": 2,
+  "mc_seed": 0,
+  "sampling_budget": 2000,
+  "column_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "inverse_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "embedding_columns": [],
+  "parameter_bytes": 7590328,
+  "warmup_query_index": 0,
+  "sampling_seed_policy": "100000+original query index+1000000*mc_seed",
+  "wildcard_skipping": true,
+  "evaluation_performed": true,
+  "latency_scope": "single warmed query; host numpy mask construction/permutation excluded; tensor conversion/transfer and synchronized GPU inference included",
+  "methods": {
+    "own_resmade_steps": {
+      "qerror_median": 1.0,
+      "qerror_p95": 2.116217595791012,
+      "qerror_p99": 3.3717659607500257,
+      "qerror_max": 5.145478755064698,
+      "latency_median_ms": 19.55614611506462,
+      "positive_truth_queries": 100,
+      "zero_truth_queries": 100,
+      "zero_estimate_gt1": 0,
+      "zero_estimate_gt10": 0,
+      "positive_estimate_eq0": 0,
+      "positive_estimate_lt1": 25,
+      "qerror_positive_median": 1.4750714364518966,
+      "qerror_positive_p95": 2.496070000097018,
+      "qerror_positive_p99": 4.011454787550653,
+      "qerror_positive_max": 5.145478755064698
+    }
+  }
+}

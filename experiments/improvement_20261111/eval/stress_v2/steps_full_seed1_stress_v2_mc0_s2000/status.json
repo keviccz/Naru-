@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETE",
+  "evaluation_performed": false,
+  "source_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/workload_eval_supplement_v2_20261110/full_own_resmade_seed1_stress_v2",
+  "source_csv": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/workload_eval_supplement_v2_20261110/full_own_resmade_seed1_stress_v2/per_query.csv",
+  "source_method": "own_resmade",
+  "alias_of": null,
+  "queries_completed": 300,
+  "method": "own_resmade_steps",
+  "exit_code": 0
+}

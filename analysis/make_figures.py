@@ -752,49 +752,254 @@ def figA6_pg_cost():
 # --------------------------------------------------------------------------
 # Improvement experiments (filled when CODEX_HANDOFF results exist)
 # --------------------------------------------------------------------------
-VARIANTS = [('baseline', 'Baseline ResMADE', '#eb6834', 's'), ('order', '+ MI column order', '#2a78d6', 'o'),
-            ('steps', '+ equal 122,480 steps', '#1baf7a', 'D'), ('embed', '+ embedding inputs', '#eda100', 'v'),
-            ('all', 'All three', '#e87ba4', '^')]
 
 
-def fig_improvements():
-    found = sorted(EXP.glob('improvement_*/analysis/metrics_seed_ranges.csv'))
-    if not found:
-        print('skip fig12_improvements: no improvement results yet')
-        return
-    imp = pd.read_csv(found[-1])
-    imp['scale'] = imp.scale.astype(str)
-    if 'workload' in imp:
-        imp = imp[imp.workload == 'main_native']
-    sr = pd.read_csv(EXP / 'main_evaluation_20261110/metrics_seed_ranges.csv')
-    sr['scale'] = sr.scale.astype(str)
-    base = sr[sr.model == 'own_resmade'].assign(variant='baseline')
-    imp['variant'] = imp.variant.str.replace('V-', '', regex=False).str.lower()
-    d = pd.concat([base, imp], ignore_index=True)
-    fig, axes = plt.subplots(1, 3, figsize=(10.5, 3.2), sharey=False)
-    for ax, k, title in [(axes[0], 'median', 'Median q-error'), (axes[1], 'p95', '95th pct q-error'),
-                         (axes[2], 'p99', '99th pct q-error')]:
-        for i, (v, name, c, mk) in enumerate(VARIANTS):
-            g = d[d.variant == v].set_index('scale').reindex(SCALES)
-            x = np.arange(3) + (i - 2) * 0.14
-            y = g[f'qerror_{k}_seed_median']
-            ax.errorbar(x, y, yerr=[y - g[f'qerror_{k}_seed_min'], g[f'qerror_{k}_seed_max'] - y],
-                        fmt='none', ecolor=c, elinewidth=1)
-            ax.plot(x, y, marker=mk, color=c, linestyle='none', markersize=5.5, label=name,
-                    markeredgecolor='white', markeredgewidth=0.6)
+
+IMP = EXP / 'improvement_20261111/analysis'
+VAR_ORDER = ['B', 'order', 'steps', 'embed', 'all']
+VAR = {'B': ('B: baseline own ResMADE', '#eb6834', 's'),
+       'order': ('order: MI column order', '#2a78d6', 'o'),
+       'steps': ('steps: 122,480 steps at every scale', '#1baf7a', 'D'),
+       'embed': ('embed: embedding inputs (domain > 64)', '#eda100', 'v'),
+       'all': ('all: the three combined', '#e87ba4', '^')}
+IMP_NOTE = ('Main workload unless stated; 2,000 samples, MC seed 0. Point = median of 3 training seeds, bar = min–max. '
+            'Hollow marker = steps at Full, which is the baseline run reused (20 epochs at Full = 122,480 steps).')
+
+
+def _imp(name):
+    d = pd.read_csv(IMP / f'{name}.csv')
+    d['scale'] = d.scale.astype(str)
+    return d
+
+
+def _var_legend(fig, **kw):
+    handles = [Line2D([], [], color=VAR[v][1], marker=VAR[v][2], linestyle='none', markersize=6, label=VAR[v][0])
+               for v in VAR_ORDER]
+    return fig.legend(handles=handles, frameon=False, **kw)
+
+
+def improvement_main_by_seed():
+    m = _imp('metrics_by_seed')
+    m = m[(m.workload == 'main_native') & (m.sampling_budget == 2000) & (m.mc_seed == 0)]
+    m = m[['variant', 'scale', 'training_seed', 'reused_from_baseline', 'qerror_median', 'qerror_p95', 'qerror_p99',
+           'latency_median_ms']]
+    b = pd.read_csv(EXP / 'main_evaluation_20261110/metrics_by_seed.csv')
+    b['scale'] = b.scale.astype(str)
+    b = b[b.model == 'own_resmade'].assign(variant='B', reused_from_baseline=False)
+    b = b[m.columns]
+    return pd.concat([b, m], ignore_index=True)
+
+
+def _dot(ax, x, vals, v, reused=False, size=5.5):
+    y, lo, hi = np.median(vals), np.min(vals), np.max(vals)
+    ax.errorbar(x, y, yerr=[[y - lo], [hi - y]], fmt='none', ecolor=VAR[v][1], elinewidth=1.2, capsize=2)
+    ax.plot(x, y, marker=VAR[v][2], color=VAR[v][1], markersize=size, linestyle='none',
+            markerfacecolor='white' if reused else VAR[v][1], markeredgecolor=VAR[v][1] if reused else 'white',
+            markeredgewidth=1.2 if reused else 0.6)
+    return y, lo, hi
+
+
+def fig12_improvement_main():
+    d = improvement_main_by_seed()
+    rows = []
+    fig, axes = plt.subplots(2, 3, figsize=(10.5, 5.2))
+    for r, (k, title) in enumerate([('qerror_p95', '95th pct q-error'), ('qerror_p99', '99th pct q-error')]):
+        for ax, s in zip(axes[r], SCALES):
+            for i, v in enumerate(VAR_ORDER):
+                g = d[(d.scale == s) & (d.variant == v)]
+                y, lo, hi = _dot(ax, i, g[k].values, v, reused=bool(g.reused_from_baseline.any()))
+                rows.append({'scale': s, 'variant': v, 'metric': k, 'seed_median': y, 'seed_min': lo, 'seed_max': hi})
+            bmed = d[(d.scale == s) & (d.variant == 'B')][k].median()
+            ax.axhline(bmed, color=VAR['B'][1], linewidth=0.8, linestyle=':')
+            ax.set_xticks(range(5))
+            ax.set_xticklabels(VAR_ORDER)
+            ax.grid(axis='x', visible=False)
+            if r == 0:
+                ax.set_title(SCALE_LABEL[s])
+        axes[r][0].set_ylabel(title)
+    _var_legend(fig, loc='lower center', ncol=3, bbox_to_anchor=(0.5, -0.08))
+    fig.text(0.5, -0.12, IMP_NOTE + ' Dotted line = baseline median.', ha='center', fontsize=6.8, color=INK2, wrap=True)
+    fig.tight_layout()
+    save(fig, 'fig12_improvement_main', pd.DataFrame(rows))
+
+
+IMP_WL = [('main_native', 'p95', 'Main\np95'), ('main_native', 'p99', 'Main\np99'), ('scale_shared', 'p95', 'Shared\np95'),
+          ('predicate_sweep', 'p95', 'Sweep\np95'), ('stress_v2', 'pos_p95', 'Stress\npos p95'),
+          ('joint_zero_nearzero', 'pos_p95', 'Joint\npos p95')]
+
+
+def fig13_improvement_ratios():
+    p = _imp('paired_vs_baseline')
+    p = p[(p.sampling_budget == 2000) & (p.mc_seed == 0)].copy()
+    p['ratio_p95'] = p.qerror_p95_ratio
+    p['ratio_pos_p95'] = p.positive_only_qerror_p95_ratio
+    m = _imp('metrics_by_seed')
+    m = m[(m.sampling_budget == 2000) & (m.mc_seed == 0)][['variant', 'scale', 'training_seed', 'workload', 'qerror_p99']]
+    p = p.merge(m, on=['variant', 'scale', 'training_seed', 'workload'])
+    p['ratio_p99'] = p.qerror_p99 / (p.qerror_p99 - p.qerror_p99_difference)
+    rows = []
+    fig, axes = plt.subplots(1, 3, figsize=(11, 3.5), sharey=True)
+    vs = VAR_ORDER[1:]
+    for ax, s in zip(axes, SCALES):
+        for j, (wl, met, _) in enumerate(IMP_WL):
+            for i, v in enumerate(vs):
+                g = p[(p.scale == s) & (p.variant == v) & (p.workload == wl)]
+                col = {'p95': 'ratio_p95', 'p99': 'ratio_p99', 'pos_p95': 'ratio_pos_p95'}[met]
+                vals = g[col].dropna().values
+                if not len(vals):
+                    continue
+                y, lo, hi = _dot(ax, j + (i - 1.5) * 0.18, vals, v, reused=bool(g.reused_from_baseline.any()), size=4.8)
+                rows.append({'scale': s, 'variant': v, 'workload': wl, 'metric': met,
+                             'ratio_seed_median': y, 'ratio_seed_min': lo, 'ratio_seed_max': hi})
+        ax.axhline(1, color=INK, linewidth=0.9)
+        ax.set_xticks(range(len(IMP_WL)))
+        ax.set_xticklabels([w[2] for w in IMP_WL], fontsize=7)
+        ax.set_title(SCALE_LABEL[s])
+        ax.grid(axis='x', visible=False)
+    axes[0].set_ylabel('Variant / baseline, same training seed\n(below 1 = better)')
+    handles = [Line2D([], [], color=VAR[v][1], marker=VAR[v][2], linestyle='none', label=VAR[v][0]) for v in vs]
+    fig.legend(handles=handles, frameon=False, loc='lower center', ncol=4, bbox_to_anchor=(0.5, -0.1))
+    fig.text(0.5, -0.18, 'Each point: median over 3 training seeds of (variant p95 / baseline p95) computed per seed '
+             '(not a ratio of medians). Stress = stress v2; Joint = near-positive half of the joint-zero set; both positive-truth '
+             'queries only. 2,000 samples, MC seed 0.', ha='center', fontsize=6.8, color=INK2)
+    save(fig, 'fig13_improvement_ratio_by_workload', pd.DataFrame(rows))
+
+
+def fig14_improvement_training():
+    c = _imp('training_curves')
+    c = c[~((c.variant == 'steps') & (c.scale == 'full'))]
+    b = pd.read_csv(EXP / 'main_matrix_20261109/training_curves.csv')
+    b['scale'] = b.scale.astype(str)
+    b = b[b.model == 'own_resmade'].rename(columns={'seed': 'training_seed', 'global_step': 'step',
+                                                     'mean_training_nll_nats': 'training_nll'}).assign(variant='B')
+    d = pd.concat([b[['variant', 'scale', 'training_seed', 'step', 'training_nll']],
+                   c[['variant', 'scale', 'training_seed', 'step', 'training_nll']]], ignore_index=True)
+    agg = d.groupby(['variant', 'scale', 'step']).training_nll.median().reset_index()
+    fig, axes = plt.subplots(1, 3, figsize=(10.5, 3.2), sharey=True)
+    for ax, s in zip(axes, SCALES):
+        for v in VAR_ORDER:
+            g = agg[(agg.variant == v) & (agg.scale == s)].sort_values('step')
+            if g.empty:
+                continue
+            ax.plot(g.step, g.training_nll, color=VAR[v][1], marker=VAR[v][2], markersize=3, markevery=4,
+                    linewidth=1.6)
+        ax.set_xscale('log')
+        ax.set_ylim(14.6, 15.3)
+        ax.set_title(SCALE_LABEL[s])
+        ax.set_xlabel('Optimizer step (log)')
+    axes[0].set_ylabel('Training NLL, nats/row\n(window mean, masked loss)')
+    _var_legend(fig, loc='lower center', ncol=3, bbox_to_anchor=(0.5, -0.17))
+    fig.text(0.5, -0.22, 'Median of 3 training seeds. Baseline/order/embed: one point per real epoch. steps/all: one point '
+             'per 6,124-step window (1M ≈ 250 epochs, 5M ≈ 50 epochs). At Full, steps is the baseline itself. '
+             'Early points above the axis range are cut.', ha='center', fontsize=6.8, color=INK2)
+    save(fig, 'fig14_improvement_training_curves', agg)
+
+
+def fig15_improvement_cost():
+    t = _imp('training_summary')
+    b = pd.read_csv(EXP / 'main_matrix_20261109/training_summary.csv')
+    b['scale'] = b.scale.astype(str)
+    b = b[b.model == 'own_resmade'].rename(columns={'seed': 'training_seed'}).assign(variant='B')
+    b['parameter_bytes'] = t[t.variant == 'order'].groupby('scale').parameter_bytes.first().reindex(b.scale).values
+    lat = improvement_main_by_seed()
+    d = pd.concat([b[['variant', 'scale', 'training_seed', 'elapsed_seconds', 'parameter_bytes']],
+                   t[['variant', 'scale', 'training_seed', 'elapsed_seconds', 'parameter_bytes']]], ignore_index=True)
+    d = d.merge(lat[['variant', 'scale', 'training_seed', 'latency_median_ms']], on=['variant', 'scale', 'training_seed'])
+    agg = d.groupby(['variant', 'scale']).agg(train_min=('elapsed_seconds', lambda v: np.median(v) / 60),
+                                              param_mb=('parameter_bytes', lambda v: np.median(v) / 1e6),
+                                              latency_ms=('latency_median_ms', 'median')).reset_index()
+    fig, axes = plt.subplots(1, 3, figsize=(10.5, 3))
+    w = 0.16
+    for ax, col, title in [(axes[0], 'train_min', 'Training time (min)'), (axes[1], 'param_mb', 'FP32 parameters (MB)'),
+                           (axes[2], 'latency_ms', 'Median latency per query (ms)')]:
+        for i, v in enumerate(VAR_ORDER):
+            g = agg[agg.variant == v].set_index('scale').reindex(SCALES)
+            ax.bar(np.arange(3) + (i - 2) * (w + 0.01), g[col], width=w, color=VAR[v][1])
         ax.set_xticks(np.arange(3))
         ax.set_xticklabels([SCALE_SHORT[s] for s in SCALES])
         ax.set_title(title)
         ax.grid(axis='x', visible=False)
-    axes[0].legend(frameon=False, fontsize=7)
-    fig.text(0.5, -0.08, 'Own ResMADE variants on the main workload; median of 3 training seeds (bars = min–max).',
-             ha='center', fontsize=7, color=INK2)
-    save(fig, 'fig12_improvements', d)
+    _var_legend(fig, loc='lower center', ncol=3, bbox_to_anchor=(0.5, -0.2))
+    fig.text(0.5, -0.25, 'Median of 3 training seeds, one RTX 3090. Training time is measured process time (not a controlled '
+             'speed benchmark). Latency: single-query GPU inference, 2,000 samples. steps at Full = baseline.',
+             ha='center', fontsize=6.8, color=INK2)
+    fig.tight_layout()
+    save(fig, 'fig15_improvement_cost', agg)
+
+
+def fig16_improvement_budget():
+    m = _imp('metrics_by_seed')
+    m = m[(m.workload == 'budget') & (m.mc_seed == 0)]
+    p = _imp('paired_vs_baseline')
+    p = p[(p.workload == 'budget') & (p.mc_seed == 0) & (p.variant == 'order')]
+    b = p[['scale', 'training_seed', 'sampling_budget']].assign(variant='B', qerror_p95=p.baseline_qerror_p95.values)
+    d = pd.concat([b, m[['variant', 'scale', 'training_seed', 'sampling_budget', 'qerror_p95']]], ignore_index=True)
+    agg = d.groupby(['variant', 'scale', 'sampling_budget']).qerror_p95.agg(['median', 'min', 'max']).reset_index()
+    mm = _imp('matched_metrics_by_seed')
+    fig, axes = plt.subplots(1, 3, figsize=(10.5, 3.2))
+    for ax, s in zip(axes, SCALES):
+        for v in VAR_ORDER:
+            g = agg[(agg.variant == v) & (agg.scale == s)].sort_values('sampling_budget')
+            ax.plot(g.sampling_budget, g['median'], color=VAR[v][1], marker=VAR[v][2], markersize=4.5)
+            ax.fill_between(g.sampling_budget, g['min'], g['max'], color=VAR[v][1], alpha=0.12, linewidth=0)
+        mv = mm[mm.scale == s].qerror_p95.median()
+        ax.axhline(mv, color=METHODS['uniform_matched'][1], linestyle='--', linewidth=1.2)
+        ax.text(8000, mv * 0.985, 'storage-matched sample', fontsize=6.5, color=INK2, va='top', ha='right')
+        ax.set_xscale('log')
+        ax.set_xticks([100, 500, 2000, 8000])
+        ax.get_xaxis().set_major_formatter(matplotlib.ticker.ScalarFormatter())
+        ax.set_title(SCALE_LABEL[s])
+        ax.set_xlabel('Progressive samples per query')
+    axes[0].set_ylabel('95th pct q-error')
+    _var_legend(fig, loc='lower center', ncol=3, bbox_to_anchor=(0.5, -0.17))
+    fig.text(0.5, -0.22, 'Main workload, MC seed 0; line = median of 3 training seeds, band = min–max. Dashed: uniform '
+             'sample with the same bytes as embed/all FP32 parameters (median of 3 sample seeds).',
+             ha='center', fontsize=6.8, color=INK2)
+    save(fig, 'fig16_improvement_budget', agg)
+
+
+def fig17_improvement_joint_zero():
+    m = _imp('metrics_by_seed')
+    m = m[m.workload == 'joint_zero_nearzero'].rename(columns={'qerror_positive_p95': 'positive_qerror_p95'})
+    j = pd.read_csv(EXP / 'joint_zero_model_eval_20261111/analysis/all_methods_by_run.csv')
+    j['scale'] = j.scale.astype(str)
+    j = j[j.method == 'own_resmade'].assign(variant='B')
+    cols = ['positive_qerror_p95', 'zero_estimate_p95', 'positive_estimate_lt1', 'pair_strict_separation_fraction']
+    d = pd.concat([j[['variant', 'scale'] + cols], m[['variant', 'scale'] + cols]], ignore_index=True)
+    agg = d.groupby(['variant', 'scale'])[cols].agg(['median', 'min', 'max'])
+    agg.columns = ['_'.join(c) for c in agg.columns]
+    agg = agg.reset_index()
+    panels = [('positive_qerror_p95', 'Near-positive: 95th pct q-error'),
+              ('zero_estimate_p95', 'Joint-zero: 95th pct estimate (rows)'),
+              ('positive_estimate_lt1', 'Near-positive estimated < 1 row\n(of 100)'),
+              ('pair_strict_separation_fraction', 'Pairs ranked correctly (fraction)')]
+    fig, axes = plt.subplots(1, 4, figsize=(12, 3))
+    for ax, (col, title) in zip(axes, panels):
+        for i, v in enumerate(VAR_ORDER):
+            for k, s in enumerate(SCALES):
+                r = agg[(agg.variant == v) & (agg.scale == s)]
+                if r.empty:
+                    continue
+                r = r.iloc[0]
+                x = k + (i - 2) * 0.15
+                ax.plot([x, x], [r[f'{col}_min'], r[f'{col}_max']], color=VAR[v][1], linewidth=1.2)
+                ax.plot(x, r[f'{col}_median'], marker=VAR[v][2], color=VAR[v][1], markersize=4.5, linestyle='none',
+                        markeredgecolor='white', markeredgewidth=0.5)
+        ax.set_xticks(range(3))
+        ax.set_xticklabels([SCALE_SHORT[s] for s in SCALES])
+        ax.set_title(title, fontsize=8.3)
+        ax.grid(axis='x', visible=False)
+    _var_legend(fig, loc='lower center', ncol=3, bbox_to_anchor=(0.5, -0.2))
+    fig.text(0.5, -0.25, '100 positive/zero pairs per scale (targeted workload). Point = median of 3 training × 3 MC seeds, '
+             'bar = min–max; these 9 runs are not independent trainings.', ha='center', fontsize=6.8, color=INK2)
+    fig.tight_layout()
+    save(fig, 'fig17_improvement_joint_zero', agg)
 
 
 if __name__ == '__main__':
     for f in [fig_training_curves, fig_main_accuracy, fig_survival, fig_paired_resmade, fig_grouped,
               fig_cost_accuracy, fig_workloads, fig_budget, fig_width, fig_joint_zero, fig_scale_trend,
               figA1_training_cost, figA2_tail_groups, figA3_mc_vs_training, figA4_latency, figA5_nll_vs_tail,
-              figA6_pg_cost, fig_improvements]:
+              figA6_pg_cost, fig12_improvement_main, fig13_improvement_ratios, fig14_improvement_training,
+              fig15_improvement_cost, fig16_improvement_budget, fig17_improvement_joint_zero]:
         f()

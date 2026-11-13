@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETE",
+  "evaluation_performed": false,
+  "source_dir": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/eval/main_native/embed_full_seed2_main_native_mc0_s2000",
+  "source_csv": "/dongqishi01/Zhangdongjian/DSC5003_Naru_20261109/experiments/improvement_20261111/eval/main_native/embed_full_seed2_main_native_mc0_s2000/per_query.csv",
+  "source_method": "own_resmade_embed",
+  "alias_of": "embed_full_seed2_main_native_mc0_s2000",
+  "queries_completed": 2000,
+  "method": "own_resmade_embed",
+  "exit_code": 0
+}
