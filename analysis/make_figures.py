@@ -757,13 +757,14 @@ def figA6_pg_cost():
 
 IMP = EXP / 'improvement_20261111/analysis'
 VAR_ORDER = ['B', 'order', 'steps', 'embed', 'all']
-VAR = {'B': ('B: baseline own ResMADE', '#eb6834', 's'),
-       'order': ('order: MI column order', '#2a78d6', 'o'),
-       'steps': ('steps: 122,480 steps at every scale', '#1baf7a', 'D'),
-       'embed': ('embed: embedding inputs (domain > 64)', '#eda100', 'v'),
-       'all': ('all: the three combined', '#e87ba4', '^')}
+VAR = {'B': ('Naru (our reproduction, baseline)', '#eb6834', 's'),
+       'order': ('Naru + order: MI column order', '#2a78d6', 'o'),
+       'steps': ('Naru + steps: 122,480 steps at every scale', '#1baf7a', 'D'),
+       'embed': ('Naru + embed: embedding inputs (domain > 64)', '#eda100', 'v'),
+       'all': ('Naru+: all three changes', '#e87ba4', '^')}
+VAR_TICK = {'B': 'Naru', 'order': '+order', 'steps': '+steps', 'embed': '+embed', 'all': 'Naru+'}
 IMP_NOTE = ('Main workload unless stated; 2,000 samples, MC seed 0. Point = median of 3 training seeds, bar = min–max. '
-            'Hollow marker = steps at Full, which is the baseline run reused (20 epochs at Full = 122,480 steps).')
+            'Hollow marker = Naru + steps at Full, which is the Naru run reused (20 epochs at Full = 122,480 steps).')
 
 
 def _imp(name):
@@ -812,13 +813,13 @@ def fig12_improvement_main():
             bmed = d[(d.scale == s) & (d.variant == 'B')][k].median()
             ax.axhline(bmed, color=VAR['B'][1], linewidth=0.8, linestyle=':')
             ax.set_xticks(range(5))
-            ax.set_xticklabels(VAR_ORDER)
+            ax.set_xticklabels([VAR_TICK[v] for v in VAR_ORDER])
             ax.grid(axis='x', visible=False)
             if r == 0:
                 ax.set_title(SCALE_LABEL[s])
         axes[r][0].set_ylabel(title)
     _var_legend(fig, loc='lower center', ncol=3, bbox_to_anchor=(0.5, -0.08))
-    fig.text(0.5, -0.12, IMP_NOTE + ' Dotted line = baseline median.', ha='center', fontsize=6.8, color=INK2, wrap=True)
+    fig.text(0.5, -0.12, IMP_NOTE + ' Dotted line = Naru median.', ha='center', fontsize=6.8, color=INK2, wrap=True)
     fig.tight_layout()
     save(fig, 'fig12_improvement_main', pd.DataFrame(rows))
 
@@ -856,10 +857,10 @@ def fig13_improvement_ratios():
         ax.set_xticklabels([w[2] for w in IMP_WL], fontsize=7)
         ax.set_title(SCALE_LABEL[s])
         ax.grid(axis='x', visible=False)
-    axes[0].set_ylabel('Variant / baseline, same training seed\n(below 1 = better)')
+    axes[0].set_ylabel('Variant / Naru, same training seed\n(below 1 = better)')
     handles = [Line2D([], [], color=VAR[v][1], marker=VAR[v][2], linestyle='none', label=VAR[v][0]) for v in vs]
     fig.legend(handles=handles, frameon=False, loc='lower center', ncol=4, bbox_to_anchor=(0.5, -0.1))
-    fig.text(0.5, -0.18, 'Each point: median over 3 training seeds of (variant p95 / baseline p95) computed per seed '
+    fig.text(0.5, -0.18, 'Each point: median over 3 training seeds of (variant p95 / Naru p95) computed per seed '
              '(not a ratio of medians). Stress = stress v2; Joint = near-positive half of the joint-zero set; both positive-truth '
              'queries only. 2,000 samples, MC seed 0.', ha='center', fontsize=6.8, color=INK2)
     save(fig, 'fig13_improvement_ratio_by_workload', pd.DataFrame(rows))
@@ -889,8 +890,8 @@ def fig14_improvement_training():
         ax.set_xlabel('Optimizer step (log)')
     axes[0].set_ylabel('Training NLL, nats/row\n(window mean, masked loss)')
     _var_legend(fig, loc='lower center', ncol=3, bbox_to_anchor=(0.5, -0.17))
-    fig.text(0.5, -0.22, 'Median of 3 training seeds. Baseline/order/embed: one point per real epoch. steps/all: one point '
-             'per 6,124-step window (1M ≈ 250 epochs, 5M ≈ 50 epochs). At Full, steps is the baseline itself. '
+    fig.text(0.5, -0.22, 'Median of 3 training seeds. Naru, +order, +embed: one point per real epoch. +steps, Naru+: one point '
+             'per 6,124-step window (1M ≈ 250 epochs, 5M ≈ 50 epochs). At Full, Naru + steps is the Naru run itself. '
              'Early points above the axis range are cut.', ha='center', fontsize=6.8, color=INK2)
     save(fig, 'fig14_improvement_training_curves', agg)
 
@@ -921,7 +922,7 @@ def fig15_improvement_cost():
         ax.grid(axis='x', visible=False)
     _var_legend(fig, loc='lower center', ncol=3, bbox_to_anchor=(0.5, -0.2))
     fig.text(0.5, -0.25, 'Median of 3 training seeds, one RTX 3090. Training time is measured process time (not a controlled '
-             'speed benchmark). Latency: single-query GPU inference, 2,000 samples. steps at Full = baseline.',
+             'speed benchmark). Latency: single-query GPU inference, 2,000 samples. Naru + steps at Full = Naru.',
              ha='center', fontsize=6.8, color=INK2)
     fig.tight_layout()
     save(fig, 'fig15_improvement_cost', agg)
@@ -953,7 +954,7 @@ def fig16_improvement_budget():
     axes[0].set_ylabel('95th pct q-error')
     _var_legend(fig, loc='lower center', ncol=3, bbox_to_anchor=(0.5, -0.17))
     fig.text(0.5, -0.22, 'Main workload, MC seed 0; line = median of 3 training seeds, band = min–max. Dashed: uniform '
-             'sample with the same bytes as embed/all FP32 parameters (median of 3 sample seeds).',
+             'sample with the same bytes as the +embed / Naru+ FP32 parameters (median of 3 sample seeds).',
              ha='center', fontsize=6.8, color=INK2)
     save(fig, 'fig16_improvement_budget', agg)
 

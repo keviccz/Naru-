@@ -121,17 +121,17 @@ All learned models cut the tail error by one to three orders of magnitude relati
 ## Status
 
 - Replication, baselines, PostgreSQL comparison and supplementary experiments: complete.
-- Model improvements: complete. Fixed ablation on our ResMADE (mutual-information column order, 122,480 training steps at every scale, 32-dim embedding inputs for columns with domain > 64, and all three combined), 3 scales × 3 training seeds. Main-workload p95, median across seeds:
+- Model improvements: complete. Fixed ablation on our ResMADE (mutual-information column order, 122,480 training steps at every scale, 32-dim embedding inputs for columns with domain > 64, and all three combined), 3 scales × 3 training seeds. We call the reproduced baseline **Naru** and the model with all three changes **Naru+**. Main-workload p95, median across seeds:
 
   | Variant | 1M | 5M | full |
   |---|---:|---:|---:|
-  | baseline | 1.463 | 1.295 | 1.191 |
-  | column order | 1.465 | 1.288 | 1.195 |
-  | more steps | 1.265 | 1.274 | 1.191 (= baseline) |
-  | embedding | 1.478 | 1.280 | 1.176 |
-  | all three | 1.281 | 1.237 | 1.185 |
+  | Naru (baseline) | 1.463 | 1.295 | 1.191 |
+  | Naru + order | 1.465 | 1.288 | 1.195 |
+  | Naru + steps | 1.265 | 1.274 | 1.191 (= Naru) |
+  | Naru + embed | 1.478 | 1.280 | 1.176 |
+  | **Naru+** | 1.281 | 1.237 | 1.185 |
 
-  Most of the gain comes from training longer at small scale (the 1M baseline was under-trained). No variant wins on every metric: at full scale, embedding and all-three raise p99 for two of three seeds and worsen the stress workload's positive-query p95 by 7–12%. Details, costs and negative results: `experiments/improvement_20261111/FINAL_ANALYSIS.md` (Chinese) and `docs/RESULTS_zh.md` §4; figures `fig12`–`fig17`.
+  Most of the gain comes from training longer at small scale (the 1M Naru baseline was under-trained). No variant, Naru+ included, wins on every metric: at full scale, Naru + embed and Naru+ raise p99 for two of three seeds and worsen the stress workload's positive-query p95 by 7–12%. Details, costs and negative results: `experiments/improvement_20261111/FINAL_ANALYSIS.md` (Chinese) and `docs/RESULTS_zh.md` §4; figures `fig12`–`fig17`.
 - Figures: `figures/` (PNG + PDF), rebuilt by `python analysis/make_figures.py` (matplotlib, numpy, pandas); plotted numbers in `analysis/tables/`. Chinese result notes for the team: `docs/RESULTS_zh.md`.
 
 ## References
