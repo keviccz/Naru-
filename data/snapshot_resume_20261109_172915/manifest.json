@@ -18,7 +18,7 @@
   "network_policy": "USER_AUTHORIZED_PROXY",
   "status": "COMPLETE",
   "rows_written": 12540479,
-  "resumed_from": "F:\\CITYU_FILES\\202609DSC5003C62\\Project\\Naru_Lab_20261109\\data\\snapshot_resume_20261109_163627",
+  "resumed_from": "data/snapshot_resume_20261109_163627",
   "started": "2026-11-09T09:29:15.487906+00:00",
   "page_size": 10000,
   "workers": 4,
